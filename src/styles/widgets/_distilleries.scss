@@ -1,0 +1,25 @@
+
+// Distilleries List
+// ---------------------------------------+
+//
+
+.distilleries {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	transform-style: preserve-3d;
+
+	// Grid item container
+	li {
+		border: 1px solid $white-rgba-15;
+		margin: 5px;
+		padding: 20px;
+		width: calc(20% - 10px);
+
+		p {
+			align-items: center;
+		}
+	}
+}

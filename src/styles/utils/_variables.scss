@@ -1,0 +1,41 @@
+
+// Config Variables
+// ---------------------------------------+
+//
+
+// Colors
+$black                     : #000;
+$black-rgba-60             : rgba($black, 0.6);
+$blue                      : blue;
+$white                     : #fff;
+$white-rgba-0              : rgba($white, 0);
+$white-rgba-15             : rgba($white, 0.15);
+$white-rgba-60             : rgba($white, 0.6);
+
+$text-default              : $white;
+
+// Paths
+$image-path                : '../img';
+$font-path                 : '../fonts';
+
+// Fonts
+$font-family-default       : 'Calibre Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-light         : 'Calibre Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-bold          : 'Calibre Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-black         : 'Calibre Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Animation
+$anim-speed                : 0.3s;
+
+// Grid
+$desktop-breakpoint-min: 980px;
+$desktop-breakpoint-max: 9999px;
+$desktop-width: 980px;
+
+$tablet-breakpoint-min: 540px;
+$tablet-breakpoint-max: 979px;
+$tablet-width: 540px;
+
+$mobile-breakpoint-min:	1px;
+$mobile-breakpoint-max: 539px;
+$mobile-width: 320px;

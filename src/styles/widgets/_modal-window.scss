@@ -1,0 +1,161 @@
+
+// Modal Window
+// ---------------------------------------+
+//
+
+$_btn-close-size : 20px;
+$_modal-padding  : 10px;
+
+#modal-overlay {
+	background: $black-rgba-60;
+	display: none;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	transition: all $anim-speed;
+	visibility: hidden;
+	width: 100%;
+	z-index: 11;
+
+	&.active {
+		display: block;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+// Initially hide content
+.modal-content {
+	display: none;
+	opacity: 0;
+	padding: 30px;
+	transform: translate3d(0,0,0);
+	visibility: hidden;
+}
+
+// Default layout
+.modal-window {
+	backface-visibility: hidden;
+	background: $black;
+	display: block;
+	left: 50%;
+	margin-top: 50px;
+	max-height: calc(90vh);
+	opacity: 0;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: all $anim-speed ease-out;
+	transition-delay: 0;
+	visibility: hidden;
+	width: 90%;
+	z-index: 12;
+
+	@include breakpoint(desktop) {
+		max-width: 800px;
+		width: 100%;
+	}
+
+	&.active {
+		margin-top: 0;
+		opacity: 1;
+		visibility: visible;
+
+		.modal-content {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.modal-content {
+		display: block;
+		margin: $_modal-padding;
+		max-height: calc(90vh - (#{$_modal-padding} * 2));
+		opacity: 0;
+		overflow-y: auto;
+		position: relative;
+		transition: all $anim-speed;
+		transition-delay: $anim-speed;
+		visibility: hidden;
+	}
+}
+
+// Close button
+// -----------------------------------------------------
+//
+
+.modal-close {
+	display: block;
+	height: $_btn-close-size;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-indent: 100%;
+	top: -35px;
+	width: $_btn-close-size;
+
+	.item {
+		background-color: $white;
+		cursor: pointer;
+		display: block;
+		height: 4px;
+		position: absolute;
+		transition: all $anim-speed ease-out;
+		width: 4px;
+	}
+
+	.one-1 {
+		left: 0;
+		top: 0;
+	}
+
+	.one-2 {
+		left: 71%;
+		margin-left: -2px;
+		top: 20%;
+	}
+
+	.one-3 {
+		right: 0;
+		top: 0;
+	}
+
+	.two-1 {
+		left: 22%;
+		margin-top: -2px;
+		top: 30%;
+	}
+
+	.two-2 {
+		left: 50%;
+		margin-left: -2px;
+		margin-top: -2px;
+		top: 50%;
+	}
+
+	.two-3 {
+		margin-top: -2px;
+		right: 22%;
+		top: 70%;
+	}
+
+	.three-1 {
+		bottom: 0;
+		left: 0;
+	}
+
+	.three-2 {
+		bottom: 20%;
+		left: 30%;
+		margin-left: -2px;
+	}
+
+	.three-3 {
+		bottom: 0;
+		right: 0;
+	}
+}

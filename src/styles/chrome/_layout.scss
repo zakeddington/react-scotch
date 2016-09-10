@@ -1,0 +1,18 @@
+html {
+	overflow-x: hidden;
+}
+
+body {
+	background: $black;
+	min-width: $mobile-width;
+}
+
+header {
+	a.isActive {
+		color: $blue;
+	}
+}
+
+footer {
+	min-height: 100px;
+}

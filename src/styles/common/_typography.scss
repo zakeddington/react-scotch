@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'Calibre Regular';
+	src: url($font-path+'/CalibreWeb-Regular.eot?') format('eot'), url($font-path+'/CalibreWeb-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Calibre Bold';
+	src: url($font-path+'/CalibreWeb-Bold.eot?') format('eot'), url($font-path+'/CalibreWeb-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Calibre Black';
+	src: url($font-path+'/CalibreWeb-Black.eot?') format('eot'), url($font-path+'/CalibreWeb-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Calibre Light';
+	src: url($font-path+'/CalibreWeb-Light.eot?') format('eot'), url($font-path+'/CalibreWeb-Light.woff') format('woff');
+}
+
+
+// Base Typography
+// ---------------------------------------+
+//
+body {
+	color: $text-default;
+	font-family: $font-family-default;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+a {
+	color: $white;
+	text-decoration: none;
+
+	&:focus,
+	&:hover {
+		outline: none;
+	}
+}
+
+strong {
+	font-family: $font-family-bold;
+}

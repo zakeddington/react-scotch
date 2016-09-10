@@ -1,0 +1,63 @@
+
+// Mixins
+// ------------------------------------------+
+//
+
+@mixin accelerate() {
+	backface-visibility: hidden;
+	perspective: 1000;
+	transform: translate3d(0,0,0);
+}
+
+@mixin clearfix() {
+	&:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
+}
+
+@mixin show() {
+	display: block;
+	visibility: visible;
+}
+
+@mixin hide() {
+	display: none;
+	visibility: hidden;
+}
+
+@mixin hide-text() {
+	text-indent: -99999em;
+}
+
+@mixin offscreen() {
+	display: block;
+	left: -999999px;
+	position: absolute;
+	top: -999999px;
+}
+
+// Media Queries
+@mixin breakpoint($breakpoints...) {
+	$breakpoint-min: $desktop-breakpoint-min;
+	$breakpoint-max: $desktop-breakpoint-max;
+
+	@each $breakpoint in $breakpoints {
+
+		@if $breakpoint == mobile {
+			$breakpoint-min: $mobile-breakpoint-min;
+			$breakpoint-max: $mobile-breakpoint-max;
+		} @else if $breakpoint == tablet {
+			$breakpoint-min: $tablet-breakpoint-min;
+			$breakpoint-max: $tablet-breakpoint-max;
+		} @else if $breakpoint == desktop {
+			$breakpoint-min: $desktop-breakpoint-min;
+			$breakpoint-max: $desktop-breakpoint-max;
+		}
+
+		@media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+			@content;
+		}
+	}
+}
