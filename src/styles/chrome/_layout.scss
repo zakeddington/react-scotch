@@ -8,8 +8,13 @@ body {
 }
 
 header {
-	a.isActive {
-		color: $blue;
+	ul {
+		text-align: center;;
+
+		li {
+			display: inline-block;
+			margin: 10px;
+		}
 	}
 }
 

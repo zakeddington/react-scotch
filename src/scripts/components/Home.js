@@ -9,8 +9,6 @@ class Home extends Component {
 
 		this.api = '/assets/data/distilleries.json';
 
-		console.log('constructor Home');
-
 		this.state = {
 			data : null
 		}
@@ -30,8 +28,33 @@ class Home extends Component {
 			});
 
 			res.on('end', () => {
-				var data = JSON.parse(body);
-				this.setState({data: data});
+				var data       = JSON.parse(body);
+				var allRegions = [];
+
+				for (let region in data) {
+					if (region.length) {
+						Array.prototype.push.apply(allRegions, data[region]);
+					}
+				}
+
+				data.All = allRegions;
+
+				data.All.sort(function(a, b) {
+					var nameA = a.name.toLowerCase();
+					var nameB = b.name.toLowerCase();
+
+					if (nameA < nameB) {
+						return -1;
+					} else if (nameA > nameB) {
+						return 1;
+					}
+
+					return 0;
+				});
+
+				console.log(data.All.length);
+
+				this.setState({ data: data });
 			});
 		}).on('error', (e) => {
 			console.error(this.api, status, e.toString());
@@ -40,11 +63,8 @@ class Home extends Component {
 
 	render() {
 		var region = this.props.route.region;
-		console.warn('render Home');
-		console.warn(region);
 
 		if ( this.state.data ) {
-			console.warn(this.state.data[region]);
 			return (
 				<List data={this.state.data[region]}></List>
 			);

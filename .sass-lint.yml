@@ -99,7 +99,7 @@ rules:
   space-before-brace:
     - 1
     - include: true
-  # space-before-colon: 1
+  space-before-colon: 0
   space-between-parens:
     - 1
     - include: false

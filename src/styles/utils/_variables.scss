@@ -6,11 +6,12 @@
 // Colors
 $black                     : #000;
 $black-rgba-60             : rgba($black, 0.6);
-$blue                      : blue;
+$blue                      : #00f;
 $white                     : #fff;
 $white-rgba-0              : rgba($white, 0);
 $white-rgba-15             : rgba($white, 0.15);
 $white-rgba-60             : rgba($white, 0.6);
+$yellow                    : #dab252;
 
 $text-default              : $white;
 
@@ -19,10 +20,10 @@ $image-path                : '../img';
 $font-path                 : '../fonts';
 
 // Fonts
-$font-family-default       : 'Calibre Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-light         : 'Calibre Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-bold          : 'Calibre Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-black         : 'Calibre Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-default       : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-light         : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-bold          : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-black         : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Animation
 $anim-speed                : 0.3s;

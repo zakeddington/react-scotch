@@ -12,16 +12,26 @@ class Header extends Component {
 					 <img src='assets/img/banner.png' alt="POP"/>
 				</div>
 				*/}
-				<div className="header--nav">
-					<ul className="header--menu">
-						<li>
-							<Link to="speyside">Speyside</Link>
-						</li>
-						<li>
-							<Link to="highlands">Highlands</Link>
-						</li>
-					</ul>
-				</div>
+				<ul>
+					<li>
+						<Link activeClassName="isActive" to="all">All</Link>
+					</li>
+					<li>
+						<Link activeClassName="isActive" to="campbeltown">Campbeltown</Link>
+					</li>
+					<li>
+						<Link activeClassName="isActive" to="highlands">Highlands</Link>
+					</li>
+					<li>
+						<Link activeClassName="isActive" to="islay">Islay</Link>
+					</li>
+					<li>
+						<Link activeClassName="isActive" to="lowlands">Lowlands</Link>
+					</li>
+					<li>
+						<Link activeClassName="isActive" to="speyside">Speyside</Link>
+					</li>
+				</ul>
 			</header>
 		);
 	}
