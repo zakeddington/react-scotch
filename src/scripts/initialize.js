@@ -9,9 +9,10 @@ render(
 		<Route path="/" component={App}>
 			<IndexRoute component={Home} region='All' />
 			<Route path="campbeltown" component={Home} region='Campbeltown' />
-			<Route path="highlands" component={Home} region='Highlands' />
+			<Route path="highland" component={Home} region='Highland' />
+			<Route path="islands" component={Home} region='Islands' />
 			<Route path="islay" component={Home} region='Islay' />
-			<Route path="lowlands" component={Home} region='Lowlands' />
+			<Route path="lowland" component={Home} region='Lowland' />
 			<Route path="speyside" component={Home} region='Speyside' />
 			<Route path="*" component={Home} region='All' />
 		</Route>

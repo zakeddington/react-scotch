@@ -77,12 +77,13 @@ class Home extends Component {
 				<div>
 					<nav>
 						<ul>
-							<li><Link activeClassName="isActive" to="all">All</Link></li>
-							<li><Link activeClassName="isActive" to="campbeltown">Campbeltown</Link></li>
-							<li><Link activeClassName="isActive" to="highlands">Highlands</Link></li>
-							<li><Link activeClassName="isActive" to="islay">Islay</Link></li>
-							<li><Link activeClassName="isActive" to="lowlands">Lowlands</Link></li>
-							<li><Link activeClassName="isActive" to="speyside">Speyside</Link></li>
+							<li><Link activeClassName="isActive" to="all">All <span>({this.state.data.All.length})</span></Link></li>
+							<li><Link activeClassName="isActive" to="campbeltown">Campbeltown <span>({this.state.data.Campbeltown.length})</span></Link></li>
+							<li><Link activeClassName="isActive" to="highland">Highland <span>({this.state.data.Highland.length})</span></Link></li>
+							<li><Link activeClassName="isActive" to="islands">Islands <span>({this.state.data.Islands.length})</span></Link></li>
+							<li><Link activeClassName="isActive" to="islay">Islay <span>({this.state.data.Islay.length})</span></Link></li>
+							<li><Link activeClassName="isActive" to="lowland">Lowland <span>({this.state.data.Lowland.length})</span></Link></li>
+							<li><Link activeClassName="isActive" to="speyside">Speyside <span>({this.state.data.Speyside.length})</span></Link></li>
 						</ul>
 
 						<SearchBar searchText={this.state.searchText} onUserInput={this.handleUserInput} />

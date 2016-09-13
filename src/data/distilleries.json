@@ -19,216 +19,224 @@
 			"founded" : 1828
 		}
 	],
-	"Highlands": [
+	"Highland": [
 		{
 			"name"    : "Aberfeldy",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"founded" : 1896,
 			"image"   : ""
 		},
 		{
-			"name"    : "Abhainn Dearg",
-			"region"  : "Highlands",
-			"image"   : "",
-			"founded" : 2009
-		},
-		{
-			"name"    : "Arran",
-			"region"  : "Highlands",
-			"image"   : "",
-			"founded" : 1993
+			"name"    : "Ardmore",
+			"region"  : "Highland",
+			"founded" : 1898,
+			"image"   : ""
 		},
 		{
 			"name"    : "Balblair",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"founded" : 1790,
 			"image"   : ""
 		},
 		{
 			"name"    : "Ben Nevis",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"founded" : 1825,
 			"image"   : ""
 		},
 		{
 			"name"    : "Blair Athol",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1798
 		},
 		{
 			"name"    : "Cameronbridge",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1824
 		},
 		{
 			"name"    : "Clynelish",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1899
 		},
 		{
 			"name"    : "Daftmill",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 2005
 		},
 		{
 			"name"    : "Dalmore",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1839
 		},
 		{
 			"name"    : "Dalwhinnie",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1897
 		},
 		{
 			"name"    : "Deanston",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1966
 		},
 		{
 			"name"    : "Edradour",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1837
 		},
 		{
 			"name"    : "Fettercairn",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1824
 		},
 		{
 			"name"    : "Glencadam",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1825
 		},
 		{
 			"name"    : "Glen Garioch",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1797
 		},
 		{
 			"name"    : "Glengoyne",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1833
 		},
 		{
 			"name"    : "Glenmorangie",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1843
 		},
 		{
 			"name"    : "Glen Ord",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1838
 		},
 		{
 			"name"    : "Glenturret",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1959
 		},
 		{
-			"name"    : "Highland Park",
-			"region"  : "Highlands",
-			"image"   : "",
-			"founded" : 1798
-		},
-		{
 			"name"    : "Invergordon",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1961
 		},
 		{
-			"name"    : "Isle of Jura",
-			"region"  : "Highlands",
-			"image"   : "",
-			"founded" : 1963
-		},
-		{
 			"name"    : "Loch Ewe",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 2006
 		},
 		{
 			"name"    : "Loch Lomond",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1966
 		},
 		{
 			"name"    : "Oban",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1794
 		},
 		{
 			"name"    : "Pulteney",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1826
 		},
 		{
 			"name"    : "Royal Brackla",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1812
 		},
 		{
 			"name"    : "Royal Lochnagar",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1845
 		},
 		{
-			"name"    : "Scapa",
-			"region"  : "Highlands",
-			"image"   : "",
-			"founded" : 1885
-		},
-		{
-			"name"    : "Talisker",
-			"region"  : "Highlands",
-			"image"   : "",
-			"founded" : 1831
-		},
-		{
 			"name"    : "Teaninich",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1817
 		},
 		{
-			"name"    : "Tobermory",
-			"region"  : "Highlands",
-			"image"   : "",
-			"founded" : 1798
-		},
-		{
 			"name"    : "Tomatin",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1897
 		},
 		{
 			"name"    : "Tullibardine",
-			"region"  : "Highlands",
+			"region"  : "Highland",
 			"image"   : "",
 			"founded" : 1949
+		}
+	],
+	"Islands": [
+		{
+			"name"    : "Abhainn Dearg",
+			"region"  : "Islands",
+			"image"   : "",
+			"founded" : 2009
+		},
+		{
+			"name"    : "Arran",
+			"region"  : "Islands",
+			"image"   : "",
+			"founded" : 1993
+		},
+		{
+			"name"    : "Highland Park",
+			"region"  : "Islands",
+			"image"   : "",
+			"founded" : 1798
+		},
+		{
+			"name"    : "Isle of Jura",
+			"region"  : "Islands",
+			"image"   : "",
+			"founded" : 1963
+		},
+		{
+			"name"    : "Scapa",
+			"region"  : "Islands",
+			"image"   : "",
+			"founded" : 1885
+		},
+		{
+			"name"    : "Talisker",
+			"region"  : "Islands",
+			"image"   : "",
+			"founded" : 1831
+		},
+		{
+			"name"    : "Tobermory",
+			"region"  : "Islands",
+			"image"   : "",
+			"founded" : 1798
 		}
 	],
 	"Islay": [
@@ -281,52 +289,52 @@
 			"founded" : 1815
 		}
 	],
-	"Lowlands": [
+	"Lowland": [
 		{
 			"name"    : "Ailsa Bay",
-			"region"  : "Lowlands",
+			"region"  : "Lowland",
 			"image"   : "",
 			"founded" : 2007
 		},
 		{
 			"name"    : "Auchentoshan",
-			"region"  : "Lowlands",
+			"region"  : "Lowland",
 			"image"   : "",
 			"founded" : 1825
 		},
 		{
 			"name"    : "Bladnoch",
-			"region"  : "Lowlands",
+			"region"  : "Lowland",
 			"image"   : "",
 			"founded" : 1825
 		},
 		{
 			"name"    : "Girvan",
-			"region"  : "Lowlands",
+			"region"  : "Lowland",
 			"image"   : "",
 			"founded" : 1963
 		},
 		{
 			"name"    : "Glenkinchie",
-			"region"  : "Lowlands",
+			"region"  : "Lowland",
 			"image"   : "",
 			"founded" : 1837
 		},
 		{
 			"name"    : "North British",
-			"region"  : "Lowlands",
+			"region"  : "Lowland",
 			"image"   : "",
 			"founded" : 1885
 		},
 		{
 			"name"    : "Port Dundas",
-			"region"  : "Lowlands",
+			"region"  : "Lowland",
 			"image"   : "",
 			"founded" : 1845
 		},
 		{
 			"name"    : "Strathclyde",
-			"region"  : "Lowlands",
+			"region"  : "Lowland",
 			"image"   : "",
 			"founded" : 1927
 		}
@@ -342,12 +350,6 @@
 			"name"    : "Allt-A-Bhainne",
 			"region"  : "Speyside",
 			"founded" : 1975,
-			"image"   : ""
-		},
-		{
-			"name"    : "Ardmore",
-			"region"  : "Speyside",
-			"founded" : 1898,
 			"image"   : ""
 		},
 		{
