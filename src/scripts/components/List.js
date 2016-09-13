@@ -6,8 +6,28 @@ class List extends Component {
 	}
 
 	render() {
-		if ( this.props.data ) {
-			let listItems = this.props.data.map(function(item) {
+		var origData;
+		var searchText;
+		var curData = [];
+
+
+		if (this.props.data) {
+			origData = this.props.data;
+			searchText  = this.props.searchText.toLowerCase();
+
+			if (searchText) {
+				origData.forEach(function(item) {
+					let name = item.name.toLowerCase();
+					if (name.indexOf(searchText) === -1) {
+						return;
+					}
+					curData.push(item);
+				});
+			} else {
+				curData = origData;
+			}
+
+			let listItems = curData.map(function(item) {
 				return (
 					<li key={item.name}>
 						<p>{item.name}</p>

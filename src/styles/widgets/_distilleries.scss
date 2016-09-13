@@ -1,4 +1,39 @@
 
+// Region Nav and Search
+// ---------------------------------------+
+//
+
+nav {
+	@include clearfix();
+
+	ul {
+		display: inline-block;
+
+		li {
+			display: inline-block;
+			margin: 10px;
+		}
+	}
+}
+
+form {
+	display: inline-block;
+	float: right;
+	margin: 10px;
+}
+
+label {
+	@include offscreen();
+}
+
+input {
+	border: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 0 auto;
+	padding: 5px 10px;
+}
+
 // Distilleries List
 // ---------------------------------------+
 //

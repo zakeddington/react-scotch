@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
+import SearchBar from './SearchBar';
 import List from './List';
 import http from 'http';
 
@@ -7,16 +9,24 @@ class Home extends Component {
 	constructor(props) {
 		super(props);
 
+		this.handleUserInput = this.handleUserInput.bind(this);
+
 		this.api = '/assets/data/distilleries.json';
 
 		this.state = {
-			data : null
+			data       : null,
+			searchText : ''
 		}
 
 		if ( !this.state.data ) {
 			this.loadData();
 		}
+	}
 
+	handleUserInput(searchText) {
+		this.setState({
+			searchText: searchText
+		});
 	}
 
 	loadData() {
@@ -52,8 +62,6 @@ class Home extends Component {
 					return 0;
 				});
 
-				console.log(data.All.length);
-
 				this.setState({ data: data });
 			});
 		}).on('error', (e) => {
@@ -66,7 +74,22 @@ class Home extends Component {
 
 		if ( this.state.data ) {
 			return (
-				<List data={this.state.data[region]}></List>
+				<div>
+					<nav>
+						<ul>
+							<li><Link activeClassName="isActive" to="all">All</Link></li>
+							<li><Link activeClassName="isActive" to="campbeltown">Campbeltown</Link></li>
+							<li><Link activeClassName="isActive" to="highlands">Highlands</Link></li>
+							<li><Link activeClassName="isActive" to="islay">Islay</Link></li>
+							<li><Link activeClassName="isActive" to="lowlands">Lowlands</Link></li>
+							<li><Link activeClassName="isActive" to="speyside">Speyside</Link></li>
+						</ul>
+
+						<SearchBar searchText={this.state.searchText} onUserInput={this.handleUserInput} />
+					</nav>
+
+					<List data={this.state.data[region]} searchText={this.state.searchText}></List>
+				</div>
 			);
 		}
 
