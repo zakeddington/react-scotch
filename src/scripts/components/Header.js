@@ -4,7 +4,7 @@ class Header extends Component {
 	render() {
 		return (
 			<header className="header">
-				<h1>Scotch Distilleries</h1>
+				<h1><span>Scotch Distilleries</span></h1>
 				{/*
 				<div className="header--logo">
 					 <img src='assets/img/banner.png' alt="POP"/>

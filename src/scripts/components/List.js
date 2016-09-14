@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class List extends Component {
 	constructor(props) {
@@ -30,17 +31,24 @@ class List extends Component {
 			let listItems = curData.map(function(item) {
 				return (
 					<li key={item.name}>
-						<p>{item.name}</p>
-						<p><em>Founded:</em> {item.founded}</p>
-						<p><em>Region:</em> {item.region}</p>
+						<div className="item">
+							<h3>{item.name}</h3>
+							<p><em>Founded:</em> {item.founded}</p>
+							<p><em>Region:</em> {item.region}</p>
+						</div>
 					</li>
-				);
+					);
 			});
 
 			return (
-				<ul className="distilleries">
-					{listItems}
-				</ul>
+				<ReactCSSTransitionGroup
+					component="ul"
+					className="distilleries"
+					transitionName="anim"
+					transitionEnterTimeout={350}
+					transitionLeaveTimeout={0}>
+						{listItems}
+				</ReactCSSTransitionGroup>
 			);
 		}
 

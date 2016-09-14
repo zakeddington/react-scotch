@@ -7,8 +7,12 @@ body {
 	min-width: $mobile-width;
 }
 
-main {
+header,
+main,
+footer {
 	clear: both;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
 footer {

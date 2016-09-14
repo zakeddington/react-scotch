@@ -41,9 +41,10 @@
 		"watch"                            : "^0.19.1"
 	},
 	"dependencies": {
-		"react": "^15.2.1",
-		"react-dom": "^15.2.1",
-		"react-router": "^2.6.1"
+		"react"                            : "^15.2.1",
+		"react-dom"                        : "^15.2.1",
+		"react-router"                     : "^2.6.1",
+		"react-addons-css-transition-group": "^15.3.1"
 	},
 	"scripts": {
 		"clean"          : "node npm-tasks/clean.js",

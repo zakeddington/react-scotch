@@ -5,38 +5,104 @@
 
 nav {
 	@include clearfix();
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px auto;
 
 	ul {
-		display: inline-block;
+		display: block;
+		margin-bottom: 10px;
+		text-align: center;
+		width: 100%;
+
+		@include breakpoint(desktop) {
+			text-align: left;
+			width: 75%;
+		}
 
 		li {
 			display: inline-block;
-			margin: 10px;
+			margin: 0 10px 10px;
 		}
 
-		span {
-			opacity: 0.5;
+		.count {
+			font-size: 14px;
+			margin-left: 5px;
+			opacity: 0.6;
+		}
+
+		a:hover,
+		a:focus {
+			text-decoration: none;
+
+			span {
+				text-decoration: underline;
+
+				&.count {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	form {
+		display: block;
+		padding: 0 10px;
+		text-align: center;
+		width: 100%;
+
+		@include breakpoint(desktop) {
+			float: right;
+			text-align: right;
+			width: 25%;
+		}
+
+		label {
+			@include offscreen();
+		}
+
+		input {
+			background: $blue-rgba-75;
+			border: none;
+			border-radius: 3px;
+			color: $black;
+			display: inline-block;
+			font-size: 14px;
+			line-height: 1.5;
+			margin: 0 auto;
+			padding: 5px 10px;
+			transition: all $anim-speed ease-out;
+			width: 70%;
+
+			&::placeholder {
+				color: $black;
+			}
+
+			&:focus {
+				background: $blue;
+				outline: none;
+				width: 80%;
+			}
+
+			@include breakpoint(tablet) {
+				width: 50%;
+
+				&:focus {
+					width: 60%;
+				}
+			}
+
+			@include breakpoint(desktop) {
+				width: 90%;
+
+				&:focus {
+					width: 100%;
+				}
+			}
 		}
 	}
 }
 
-form {
-	display: inline-block;
-	float: right;
-	margin: 10px;
-}
-
-label {
-	@include offscreen();
-}
-
-input {
-	border: none;
-	display: inline-block;
-	font-size: 15px;
-	margin: 0 auto;
-	padding: 5px 10px;
-}
 
 // Distilleries List
 // ---------------------------------------+
@@ -52,17 +118,51 @@ input {
 
 	// Grid item container
 	li {
-		border: 1px solid $white-rgba-15;
+		background: linear-gradient(to left top, $white-rgba-15 0%, $white-rgba-0 100%);
+		border: 1px solid $white-rgba-25;
+		border-radius: 10px 0;
+		display: flex;
 		margin: 5px;
-		padding: 20px;
-		width: calc(20% - 10px);
+		transition: all $anim-speed ease-out;
+		width: calc(25% - 10px);
+
+		@include breakpoint(tablet) {
+			width: calc(33% - 10px);
+		}
+
+		@include breakpoint(mobile) {
+			width: 100%;
+		}
+
+		.item {
+			padding: 20px;
+			transition: all $anim-speed ease-out;
+			width: 100%;
+		}
 
 		p {
 			align-items: center;
+			font-size: 14px;
 
 			em {
-				opacity: 0.5;
+				opacity: 0.6;
 			}
+		}
+	}
+
+	.anim-enter {
+		opacity: 0.01;
+
+		&.anim-enter-active {
+			opacity: 1;
+		}
+	}
+
+	.anim-leave {
+		opacity: 1;
+
+		&.anim-leave-active {
+			opacity: 0.01;
 		}
 	}
 }

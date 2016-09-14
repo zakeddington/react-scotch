@@ -77,13 +77,48 @@ class Home extends Component {
 				<div>
 					<nav>
 						<ul>
-							<li><Link activeClassName="isActive" to="all">All <span>({this.state.data.All.length})</span></Link></li>
-							<li><Link activeClassName="isActive" to="campbeltown">Campbeltown <span>({this.state.data.Campbeltown.length})</span></Link></li>
-							<li><Link activeClassName="isActive" to="highland">Highland <span>({this.state.data.Highland.length})</span></Link></li>
-							<li><Link activeClassName="isActive" to="islands">Islands <span>({this.state.data.Islands.length})</span></Link></li>
-							<li><Link activeClassName="isActive" to="islay">Islay <span>({this.state.data.Islay.length})</span></Link></li>
-							<li><Link activeClassName="isActive" to="lowland">Lowland <span>({this.state.data.Lowland.length})</span></Link></li>
-							<li><Link activeClassName="isActive" to="speyside">Speyside <span>({this.state.data.Speyside.length})</span></Link></li>
+							<li>
+								<Link activeClassName="isActive" to="all">
+									<span>All</span>
+									<span className="count">({this.state.data.All.length})</span>
+								</Link>
+							</li>
+							<li>
+								<Link activeClassName="isActive" to="campbeltown">
+									<span>Campbeltown</span>
+									<span className="count">({this.state.data.Campbeltown.length})</span>
+								</Link>
+							</li>
+							<li>
+								<Link activeClassName="isActive" to="highland">
+									<span>Highland</span>
+									<span className="count">({this.state.data.Highland.length})</span>
+								</Link>
+							</li>
+							<li>
+								<Link activeClassName="isActive" to="islands">
+									<span>Islands</span>
+									<span className="count">({this.state.data.Islands.length})</span>
+								</Link>
+							</li>
+							<li>
+								<Link activeClassName="isActive" to="islay">
+									<span>Islay</span>
+									<span className="count">({this.state.data.Islay.length})</span>
+								</Link>
+							</li>
+							<li>
+								<Link activeClassName="isActive" to="lowland">
+									<span>Lowland</span>
+									<span className="count">({this.state.data.Lowland.length})</span>
+								</Link>
+							</li>
+							<li>
+								<Link activeClassName="isActive" to="speyside">
+									<span>Speyside</span>
+									<span className="count">({this.state.data.Speyside.length})</span>
+								</Link>
+							</li>
 						</ul>
 
 						<SearchBar searchText={this.state.searchText} onUserInput={this.handleUserInput} />

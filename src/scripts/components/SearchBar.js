@@ -19,7 +19,7 @@ class SearchBar extends Component {
 				<label htmlFor="search">Search Distilleries</label>
 				<input
 					id="search"
-					type="text"
+					type="search"
 					placeholder="Search by Name"
 					value={this.props.searchText}
 					ref="searchTextInput"
