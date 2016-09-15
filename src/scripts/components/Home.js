@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import SearchBar from './SearchBar';
 import List from './List';
 import http from 'http';
@@ -9,7 +8,7 @@ class Home extends Component {
 	constructor(props) {
 		super(props);
 
-		this.handleUserInput = this.handleUserInput.bind(this);
+		this.onUserInput = this.onUserInput.bind(this);
 
 		this.api = '/assets/data/distilleries.json';
 
@@ -23,7 +22,7 @@ class Home extends Component {
 		}
 	}
 
-	handleUserInput(searchText) {
+	onUserInput(searchText) {
 		this.setState({
 			searchText: searchText
 		});
@@ -31,7 +30,7 @@ class Home extends Component {
 
 	loadData() {
 		http.get(this.api, (res) => {
-			var body   = '';
+			var body = '';
 
 			res.on('data', (chunk) => {
 				body += chunk;
@@ -75,54 +74,7 @@ class Home extends Component {
 		if ( this.state.data ) {
 			return (
 				<div>
-					<nav>
-						<ul>
-							<li>
-								<Link activeClassName="isActive" to="all">
-									<span>All</span>
-									<span className="count">({this.state.data.All.length})</span>
-								</Link>
-							</li>
-							<li>
-								<Link activeClassName="isActive" to="campbeltown">
-									<span>Campbeltown</span>
-									<span className="count">({this.state.data.Campbeltown.length})</span>
-								</Link>
-							</li>
-							<li>
-								<Link activeClassName="isActive" to="highland">
-									<span>Highland</span>
-									<span className="count">({this.state.data.Highland.length})</span>
-								</Link>
-							</li>
-							<li>
-								<Link activeClassName="isActive" to="islands">
-									<span>Islands</span>
-									<span className="count">({this.state.data.Islands.length})</span>
-								</Link>
-							</li>
-							<li>
-								<Link activeClassName="isActive" to="islay">
-									<span>Islay</span>
-									<span className="count">({this.state.data.Islay.length})</span>
-								</Link>
-							</li>
-							<li>
-								<Link activeClassName="isActive" to="lowland">
-									<span>Lowland</span>
-									<span className="count">({this.state.data.Lowland.length})</span>
-								</Link>
-							</li>
-							<li>
-								<Link activeClassName="isActive" to="speyside">
-									<span>Speyside</span>
-									<span className="count">({this.state.data.Speyside.length})</span>
-								</Link>
-							</li>
-						</ul>
-
-						<SearchBar searchText={this.state.searchText} onUserInput={this.handleUserInput} />
-					</nav>
+					<SearchBar data={this.state.data} searchText={this.state.searchText} onUserInput={this.onUserInput} />
 
 					<List data={this.state.data[region]} searchText={this.state.searchText}></List>
 				</div>

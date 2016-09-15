@@ -14,7 +14,9 @@ const AppEvents = {
 
 	// specific events
 	CUSTOM_EVENT        : 'onCustomEvent',
-	MODAL_EVENT         : 'onModalEvent'
+	MODAL_EVENT         : 'onModalEvent',
+	LIST_ANIM_START     : 'onListAnimStart',
+	LIST_ANIM_END       : 'onListAnimEnd'
 
 };
 

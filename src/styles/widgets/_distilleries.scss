@@ -118,7 +118,7 @@ nav {
 
 	// Grid item container
 	li {
-		background: linear-gradient(to left top, $white-rgba-15 0%, $white-rgba-0 100%);
+		background: linear-gradient(to left top, $white-rgba-15 0%, $black 100%);
 		border: 1px solid $white-rgba-25;
 		border-radius: 10px 0;
 		display: flex;
@@ -147,22 +147,6 @@ nav {
 			em {
 				opacity: 0.6;
 			}
-		}
-	}
-
-	.anim-enter {
-		opacity: 0.01;
-
-		&.anim-enter-active {
-			opacity: 1;
-		}
-	}
-
-	.anim-leave {
-		opacity: 1;
-
-		&.anim-leave-active {
-			opacity: 0.01;
 		}
 	}
 }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import FlipMove from 'react-flip-move';
+import PubSub from 'pubsub-js';
+import AppEvents from 'config/AppEvents';
 
 class List extends Component {
 	constructor(props) {
@@ -10,7 +12,6 @@ class List extends Component {
 		var origData;
 		var searchText;
 		var curData = [];
-
 
 		if (this.props.data) {
 			origData = this.props.data;
@@ -37,23 +38,30 @@ class List extends Component {
 							<p><em>Region:</em> {item.region}</p>
 						</div>
 					</li>
-					);
+				);
 			});
 
 			return (
-				<ReactCSSTransitionGroup
-					component="ul"
+				<FlipMove
+					staggerDurationBy="20"
+					duration={200}
+					enterAnimation={'elevator'}
+					leaveAnimation={'elevator'}
+					typeName="ul"
 					className="distilleries"
-					transitionName="anim"
-					transitionEnterTimeout={350}
-					transitionLeaveTimeout={0}>
-						{listItems}
-				</ReactCSSTransitionGroup>
+					onStartAll={function() {
+						PubSub.publish(AppEvents.LIST_ANIM_START, {});
+					}}
+					onFinishAll={function() {
+						PubSub.publish(AppEvents.LIST_ANIM_END, {});
+					}}
+				>
+					{listItems}
+				</FlipMove>
 			);
 		}
 
 		return <div>Loading...</div>;
-
 	}
 }
 
