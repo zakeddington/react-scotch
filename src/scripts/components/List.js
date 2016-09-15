@@ -49,11 +49,11 @@ class List extends Component {
 					leaveAnimation={'elevator'}
 					typeName="ul"
 					className="distilleries"
-					onStartAll={function() {
-						PubSub.publish(AppEvents.LIST_ANIM_START, {});
+					onStartAll={function(childElements) {
+						PubSub.publish(AppEvents.LIST_ANIM_START, childElements);
 					}}
-					onFinishAll={function() {
-						PubSub.publish(AppEvents.LIST_ANIM_END, {});
+					onFinishAll={function(childElements) {
+						PubSub.publish(AppEvents.LIST_ANIM_END, childElements);
 					}}
 				>
 					{listItems}

@@ -31,8 +31,7 @@ nav {
 			opacity: 0.6;
 		}
 
-		a:hover,
-		a:focus {
+		a:hover {
 			text-decoration: none;
 
 			span {
@@ -42,6 +41,19 @@ nav {
 					text-decoration: none;
 				}
 			}
+
+			&.isDisabled {
+				cursor: default;
+				text-decoration: none;
+
+				span {
+					text-decoration: none;
+				}
+			}
+		}
+
+		a.isDisabled {
+			opacity: 0.6;
 		}
 	}
 

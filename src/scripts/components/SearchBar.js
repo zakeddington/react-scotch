@@ -24,19 +24,17 @@ class SearchBar extends Component {
 		);
 	}
 
-	onAnimStart() {
-		console.log('anim start');
+	onAnimStart(childElements) {
 		this.setState({
-			isDisabledClass: 'isDisabled',
-			isDisabled: e => e.preventDefault()
+			isDisabledClass : 'isDisabled',
+			isDisabled      : e => e.preventDefault()
 		});
 	}
 
-	onAnimEnd() {
-		console.log('anim end');
+	onAnimEnd(childElements) {
 		this.setState({
-			isDisabledClass: '',
-			isDisabled: () => {}
+			isDisabledClass : '',
+			isDisabled      : () => {}
 		});
 	}
 
@@ -47,9 +45,10 @@ class SearchBar extends Component {
 		if (origData) {
 			for (let prop in origData) {
 				if (origData.hasOwnProperty(prop)) {
+					let propUrl = prop.toLowerCase();
 					listItems.push(
 						<li key={prop}>
-							<Link activeClassName="isActive" className={this.state.isDisabledClass} to={prop} key={prop}
+							<Link activeClassName="isActive" className={this.state.isDisabledClass} to={propUrl} key={prop}
 								onClick={this.state.isDisabled}
 							>
 								<span>{prop}</span>
