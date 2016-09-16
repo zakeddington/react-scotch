@@ -36,9 +36,10 @@ class List extends Component {
 				if (item.image) {
 					image   = <img src={item.image} alt={altText} />;
 				}
+
 				return (
 					<li key={item.name}>
-						<div className="item">
+						<a href="#" className="item">
 							<div className="image">
 								{image}
 							</div>
@@ -54,7 +55,8 @@ class List extends Component {
 								})}
 								</li>
 							</ul>
-						</div>
+							<div className="intro" dangerouslySetInnerHTML={{__html: item.intro}} />
+						</a>
 					</li>
 				);
 			});

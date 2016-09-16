@@ -130,18 +130,12 @@ nav {
 
 	// Grid item container
 	> li {
-		background: linear-gradient(to left top, $white-rgba-15 0%, $black 100%);
-		border: 1px dashed $white-rgba-25;
-		border-radius: 10px 0;
 		display: flex;
+		font-size: 14px;
 		margin: 5px;
+		position: relative;
 		transition: all $anim-speed ease-out;
 		width: calc(25% - 10px);
-
-		&:hover,
-		&:focus {
-			border: 1px solid $white-rgba-60;
-		}
 
 		@include breakpoint(tablet) {
 			width: calc(33% - 10px);
@@ -152,9 +146,19 @@ nav {
 		}
 
 		.item {
+			background: linear-gradient(to left top, $white-rgba-15 0%, $black 100%);
+			border: 1px dashed $white-rgba-25;
+			border-radius: 10px 0;
+			color: $white;
 			padding: 20px;
+			text-decoration: none;
 			transition: all $anim-speed ease-out;
 			width: 100%;
+
+			&:hover,
+			&:focus {
+				border: 1px solid $white-rgba-60;
+			}
 		}
 
 		.image {
@@ -179,7 +183,6 @@ nav {
 
 		li {
 			align-items: center;
-			font-size: 14px;
 
 			em {
 				opacity: 0.6;
@@ -192,6 +195,44 @@ nav {
 
 				&:first-of-type:before {
 					content: '';
+				}
+			}
+		}
+
+		.intro {
+			align-items: center;
+			background: $black-rgba-85;
+			border-radius: 10px 0;
+			display: flex;
+			height: calc(100% - 2px);
+			left: 1px;
+			opacity: 0;
+			overflow: hidden;
+			padding: 20px;
+			position: absolute;
+			top: 1px;
+			transition: all $anim-speed ease-out;
+			width: calc(100% - 2px);
+
+			@include breakpoint(tablet) {
+				font-size: 12px;
+			}
+
+			p {
+				opacity: 0;
+				transform: translateY(20px);
+				transition: all 0.5s ease-out;
+			}
+		}
+
+		.item:hover,
+		.item:focus {
+			.intro {
+				opacity: 1;
+
+				p {
+					opacity: 1;
+					transform: translateY(0);
 				}
 			}
 		}
