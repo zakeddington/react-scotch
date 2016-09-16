@@ -30,12 +30,30 @@ class List extends Component {
 			}
 
 			let listItems = curData.map(function(item) {
+				let altText = item.name + ' logo';
+				let image   = '';
+
+				if (item.image) {
+					image   = <img src={item.image} alt={altText} />;
+				}
 				return (
 					<li key={item.name}>
 						<div className="item">
+							<div className="image">
+								{image}
+							</div>
 							<h3>{item.name}</h3>
-							<p><em>Founded:</em> {item.founded}</p>
-							<p><em>Region:</em> {item.region}</p>
+							<ul className="types">
+								<li><em>Founded:</em> {item.founded}</li>
+								<li><em>Region:</em> {item.region}</li>
+								<li><em>Type:</em>
+								{item.types.map(function(type, i) {
+									return(
+										<span key={i}> {type}</span>
+									);
+								})}
+								</li>
+							</ul>
 						</div>
 					</li>
 				);

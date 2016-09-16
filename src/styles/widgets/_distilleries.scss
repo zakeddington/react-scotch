@@ -129,14 +129,19 @@ nav {
 	transform-style: preserve-3d;
 
 	// Grid item container
-	li {
+	> li {
 		background: linear-gradient(to left top, $white-rgba-15 0%, $black 100%);
-		border: 1px solid $white-rgba-25;
+		border: 1px dashed $white-rgba-25;
 		border-radius: 10px 0;
 		display: flex;
 		margin: 5px;
 		transition: all $anim-speed ease-out;
 		width: calc(25% - 10px);
+
+		&:hover,
+		&:focus {
+			border: 1px solid $white-rgba-60;
+		}
 
 		@include breakpoint(tablet) {
 			width: calc(33% - 10px);
@@ -152,12 +157,42 @@ nav {
 			width: 100%;
 		}
 
-		p {
+		.image {
+			display: block;
+			height: 0;
+			padding-top: 35%;
+			position: relative;
+
+			@include breakpoint(mobile) {
+				padding-top: 15%;
+			}
+
+			img {
+				left: 0;
+				margin: auto;
+				max-height: 100%;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+
+		li {
 			align-items: center;
 			font-size: 14px;
 
 			em {
 				opacity: 0.6;
+			}
+
+			span {
+				&:before {
+					content: ',';
+				}
+
+				&:first-of-type:before {
+					content: '';
+				}
 			}
 		}
 	}
