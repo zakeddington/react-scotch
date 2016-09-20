@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import FlipMove from 'react-flip-move';
+import preventDefault from 'react-prevent-default';
 import PubSub from 'pubsub-js';
 import AppEvents from 'config/AppEvents';
 import Modal from './Modal';
@@ -16,9 +17,7 @@ class List extends Component {
 		this.createModal = this.createModal.bind(this);
 	}
 
-	createModal(event, data) {
-		event.preventDefault();
-
+	createModal(data) {
 		ReactDOM.render(<Modal data={data} overlay={this.elOverlay} />, this.elOverlay);
 	}
 
@@ -54,7 +53,7 @@ class List extends Component {
 
 				return (
 					<li key={item.name}>
-						<a href="#" className="item" onClick={() => self.createModal(event, item)}>
+						<a href="#test" className="item" onClick={preventDefault(self.createModal.bind(this, item))}>
 							<div className="image">
 								{image}
 							</div>

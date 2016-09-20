@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import preventDefault from 'react-prevent-default';
+import isDescendant from 'utilities/IsDescendant';
 
 class Modal extends Component {
 	constructor(props) {
@@ -10,8 +12,10 @@ class Modal extends Component {
 			scrollPos   : 0
 		}
 
-		this.closeOnEsc = this.closeOnEsc.bind(this);
+		this.onFocusIn      = this.onFocusIn.bind(this);
+		this.closeOnEsc     = this.closeOnEsc.bind(this);
 		this.closeOnOverlay = this.closeOnOverlay.bind(this);
+		this.closeModal     = this.closeModal.bind(this);
 	}
 
 	componentWillMount() {
@@ -20,10 +24,10 @@ class Modal extends Component {
 
 	componentDidMount() {
 		var self = this;
+
 		ReactDOM.findDOMNode(this.refs.btnModalClose).focus();
 
-		document.addEventListener('keydown', this.closeOnEsc, false);
-		this.props.overlay.addEventListener('click', this.closeOnOverlay, false);
+		this.addEventListeners();
 
 		setTimeout(function() {
 			self.animateOpen();
@@ -39,8 +43,7 @@ class Modal extends Component {
 	}
 
 	componentWillUnmount() {
-		document.removeEventListener('keydown', this.closeOnEsc, false);
-		this.props.overlay.removeEventListener('click', this.closeOnOverlay, false);
+		this.removeEventListeners();
 	}
 
 	closeOnEsc(event) {
@@ -50,18 +53,14 @@ class Modal extends Component {
 	}
 
 	closeOnOverlay(event) {
-		event.preventDefault();
-
 		if (event.currentTarget !== event.target) {
 			return;
 		}
 
-		this.closeModal(event);
+		this.closeModal();
 	}
 
-	closeModal(event) {
-		event.preventDefault();
-
+	closeModal() {
 		document.body.classList.remove('modal-open');
 		document.body.style.top = '';
 		window.scrollTo(0, this.state.scrollPos);
@@ -80,7 +79,7 @@ class Modal extends Component {
 
 		return(
 			<div className={this.setOpenClass()}>
-				<button className="btn-modal-close" ref="btnModalClose" onClick={() => this.closeModal(event)}>
+				<button className="btn-modal-close" ref="btnModalClose" onClick={preventDefault(this.closeModal)}>
 					close modal window
 				</button>
 				<div className="modal-content">
@@ -91,6 +90,27 @@ class Modal extends Component {
 				</div>
 			</div>
 		)
+	}
+
+	onFocusIn(event) {
+		var child = event.target;
+		var parent = this.props.overlay;
+
+		if (!isDescendant(parent, child)) {
+			ReactDOM.findDOMNode(this.refs.btnModalClose).focus();
+		}
+	}
+
+	addEventListeners() {
+		document.addEventListener('focusin', this.onFocusIn, false);
+		document.addEventListener('keydown', this.closeOnEsc, false);
+		this.props.overlay.addEventListener('click', this.closeOnOverlay, false);
+	}
+
+	removeEventListeners() {
+		document.removeEventListener('focusin', this.onFocusIn, false);
+		document.removeEventListener('keydown', this.closeOnEsc, false);
+		this.props.overlay.removeEventListener('click', this.closeOnOverlay, false);
 	}
 }
 
