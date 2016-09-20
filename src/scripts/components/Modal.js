@@ -8,7 +8,8 @@ class Modal extends Component {
 
 		this.state = {
 			isOpenClass : '',
-			scrollPos   : 0
+			scrollPos   : 0,
+			setFocus    : false
 		}
 
 		this.onFocusIn      = this.onFocusIn.bind(this);
@@ -19,12 +20,18 @@ class Modal extends Component {
 
 	componentWillMount() {
 		this.state.scrollPos = document.body.scrollTop;
+
+		if (this.props.trigger) {
+			this.state.setFocus = true;
+		}
 	}
 
 	componentDidMount() {
 		var self = this;
 
-		ReactDOM.findDOMNode(this.refs.btnModalClose).focus();
+		if (this.state.setFocus) {
+			ReactDOM.findDOMNode(this.refs.btnModalClose).focus();
+		}
 
 		this.addEventListeners();
 
@@ -43,6 +50,10 @@ class Modal extends Component {
 
 	componentWillUnmount() {
 		this.removeEventListeners();
+
+		if (this.state.setFocus) {
+			this.props.trigger.focus();
+		}
 	}
 
 	closeOnEsc(event) {

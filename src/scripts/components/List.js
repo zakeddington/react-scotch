@@ -17,8 +17,25 @@ class List extends Component {
 	}
 
 	createModal(event, data) {
-		event.preventDefault();
-		ReactDOM.render(<Modal data={data} overlay={this.elOverlay} />, this.elOverlay);
+		var trigger     = null;
+		var renderModal = true;
+
+		if (event.type === 'click') {
+			event.preventDefault();
+		}
+
+		if (event.keyCode) {
+			if (event.keyCode === 13) {
+				event.preventDefault();
+				trigger = event.currentTarget;
+			} else {
+				renderModal = false;
+			}
+		}
+
+		if (renderModal) {
+			ReactDOM.render(<Modal data={data} trigger={trigger} overlay={this.elOverlay} />, this.elOverlay);
+		}
 	}
 
 	render() {
@@ -53,7 +70,7 @@ class List extends Component {
 
 				return (
 					<li key={item.name}>
-						<a href="#test" className="item" onClick={(event) => self.createModal(event, item)}>
+						<a href="#test" className="item" onClick={(event) => self.createModal(event, item)} onKeyDown={(event) => self.createModal(event, item)}>
 							<div className="image">
 								{image}
 							</div>
