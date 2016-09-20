@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import FlipMove from 'react-flip-move';
 import PubSub from 'pubsub-js';
 import AppEvents from 'config/AppEvents';
+import Modal from './Modal';
 
 class List extends Component {
 	constructor(props) {
 		super(props);
+
+		this.elOverlay = document.createElement('div');
+		this.elOverlay.id = 'modal-overlay';
+		document.body.appendChild(this.elOverlay);
+
+		this.createModal = this.createModal.bind(this);
+	}
+
+	createModal(event, data) {
+		event.preventDefault();
+
+		ReactDOM.render(<Modal data={data} overlay={this.elOverlay} />, this.elOverlay);
 	}
 
 	render() {
+		var self = this;
 		var origData;
 		var searchText;
 		var curData = [];
@@ -39,7 +54,7 @@ class List extends Component {
 
 				return (
 					<li key={item.name}>
-						<a href="#" className="item">
+						<a href="#" className="item" onClick={() => self.createModal(event, item)}>
 							<div className="image">
 								{image}
 							</div>
