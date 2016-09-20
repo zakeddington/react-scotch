@@ -42,6 +42,7 @@ nav {
 				}
 			}
 
+			&.isActive,
 			&.isDisabled {
 				cursor: default;
 				text-decoration: none;

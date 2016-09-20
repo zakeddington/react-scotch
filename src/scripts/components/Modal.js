@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import preventDefault from 'react-prevent-default';
 import isDescendant from 'utilities/IsDescendant';
 
 class Modal extends Component {
@@ -57,10 +56,11 @@ class Modal extends Component {
 			return;
 		}
 
-		this.closeModal();
+		this.closeModal(event);
 	}
 
-	closeModal() {
+	closeModal(event) {
+		event.preventDefault();
 		document.body.classList.remove('modal-open');
 		document.body.style.top = '';
 		window.scrollTo(0, this.state.scrollPos);
@@ -79,7 +79,7 @@ class Modal extends Component {
 
 		return(
 			<div className={this.setOpenClass()}>
-				<button className="btn-modal-close" ref="btnModalClose" onClick={preventDefault(this.closeModal)}>
+				<button className="btn-modal-close" ref="btnModalClose" onClick={(event) => this.closeModal(event)}>
 					close modal window
 				</button>
 				<div className="modal-content">

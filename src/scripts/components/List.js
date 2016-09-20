@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import FlipMove from 'react-flip-move';
-import preventDefault from 'react-prevent-default';
 import PubSub from 'pubsub-js';
 import AppEvents from 'config/AppEvents';
 import Modal from './Modal';
@@ -17,7 +16,8 @@ class List extends Component {
 		this.createModal = this.createModal.bind(this);
 	}
 
-	createModal(data) {
+	createModal(event, data) {
+		event.preventDefault();
 		ReactDOM.render(<Modal data={data} overlay={this.elOverlay} />, this.elOverlay);
 	}
 
@@ -53,7 +53,7 @@ class List extends Component {
 
 				return (
 					<li key={item.name}>
-						<a href="#test" className="item" onClick={preventDefault(self.createModal.bind(this, item))}>
+						<a href="#test" className="item" onClick={(event) => self.createModal(event, item)}>
 							<div className="image">
 								{image}
 							</div>
@@ -84,7 +84,9 @@ class List extends Component {
 					typeName="ul"
 					className="distilleries"
 					onStartAll={function(childElements) {
-						PubSub.publish(AppEvents.LIST_ANIM_START, childElements);
+						if (childElements.length) {
+							PubSub.publish(AppEvents.LIST_ANIM_START, childElements);
+						}
 					}}
 					onFinishAll={function(childElements) {
 						PubSub.publish(AppEvents.LIST_ANIM_END, childElements);

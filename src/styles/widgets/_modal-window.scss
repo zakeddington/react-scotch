@@ -8,6 +8,7 @@ $_btn-close-offset : 10px;
 $_modal-padding    : 30px;
 
 body.modal-open {
+	min-height: 100%;
 	overflow: hidden;
 	position: fixed;
 	width: 100%;

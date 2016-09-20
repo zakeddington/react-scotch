@@ -9,16 +9,16 @@ class SearchBar extends Component {
 
 		this.state = {
 			isDisabledClass : '',
-			isDisabled: () => {}
+			isDisabled      : () => {}
 		}
 
-		this.handleChange = this.handleChange.bind(this);
+		this.onInputChange = this.onInputChange.bind(this);
 
 		PubSub.subscribe(AppEvents.LIST_ANIM_START, this.onAnimStart.bind(this));
 		PubSub.subscribe(AppEvents.LIST_ANIM_END, this.onAnimEnd.bind(this));
 	}
 
-	handleChange() {
+	onInputChange() {
 		this.props.onUserInput(
 			this.refs.searchTextInput.value
 		);
@@ -74,7 +74,7 @@ class SearchBar extends Component {
 							placeholder="Search by Name"
 							value={this.props.searchText}
 							ref="searchTextInput"
-							onChange={this.handleChange}
+							onChange={this.onInputChange}
 						/>
 					</form>
 				</nav>
