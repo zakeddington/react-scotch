@@ -5,9 +5,10 @@
 
 nav {
 	@include clearfix();
+	border-bottom: 1px solid $white-rgba-25;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 10px auto;
+	margin: 10px auto 20px;
 
 	ul {
 		display: block;
@@ -143,6 +144,11 @@ nav {
 		}
 
 		@include breakpoint(mobile) {
+			width: 100%;
+		}
+
+		&.no-results {
+			font-size: 18px;
 			width: 100%;
 		}
 

@@ -51,12 +51,13 @@ class List extends Component {
 	render() {
 		var self = this;
 		var origData;
-		var query;
 		var curData = [];
+		var query;
+		var listItems;
 
 		if (this.props.data) {
-			origData   = this.props.data;
-			query = this.state.query.toLowerCase();
+			origData  = this.props.data;
+			query     = this.state.query.toLowerCase();
 
 			if (query) {
 				origData.forEach(function(item) {
@@ -70,37 +71,41 @@ class List extends Component {
 				curData = origData;
 			}
 
-			let listItems = curData.map(function(item) {
-				let altText = item.name + ' logo';
-				let image   = '';
+			if (curData.length) {
+				listItems = curData.map(function(item) {
+					let altText = item.name + ' logo';
+					let image   = '';
 
-				if (item.image) {
-					image   = <img src={item.image} alt={altText} />;
-				}
+					if (item.image) {
+						image   = <img src={item.image} alt={altText} />;
+					}
 
-				return (
-					<li key={item.name}>
-						<a href="#test" className="item" onClick={(event) => self.createModal(event, item)} onKeyDown={(event) => self.createModal(event, item)}>
-							<div className="image">
-								{image}
-							</div>
-							<h3>{item.name}</h3>
-							<ul className="types">
-								<li><em>Founded:</em> {item.founded}</li>
-								<li><em>Region:</em> {item.region}</li>
-								<li><em>Type:</em>
-								{item.types.map(function(type, i) {
-									return(
-										<span key={i}> {type}</span>
-									);
-								})}
-								</li>
-							</ul>
-							<div className="intro" dangerouslySetInnerHTML={{__html: item.intro}} />
-						</a>
-					</li>
-				);
-			});
+					return (
+						<li key={item.name}>
+							<a href="#test" className="item" onClick={(event) => self.createModal(event, item)} onKeyDown={(event) => self.createModal(event, item)}>
+								<div className="image">
+									{image}
+								</div>
+								<h3>{item.name}</h3>
+								<ul className="types">
+									<li><em>Founded:</em> {item.founded}</li>
+									<li><em>Region:</em> {item.region}</li>
+									<li><em>Type:</em>
+									{item.types.map(function(type, i) {
+										return(
+											<span key={i}> {type}</span>
+										);
+									})}
+									</li>
+								</ul>
+								<div className="intro" dangerouslySetInnerHTML={{__html: item.intro}} />
+							</a>
+						</li>
+					);
+				});
+			} else {
+				listItems = [<li key={"noResultsMsg"} className="no-results"><h3>Sorry, there are no results for that name.</h3></li>];
+			}
 
 			return (
 				<FlipMove
