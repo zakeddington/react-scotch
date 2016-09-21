@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import PubSub from 'pubsub-js';
 import AppEvents from 'config/AppEvents';
+import debounce from 'utilities/Debounce';
 
 class SearchBar extends Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
+			query           : '',
 			isDisabledClass : '',
 			isDisabled      : () => {}
 		}
@@ -18,10 +20,15 @@ class SearchBar extends Component {
 		PubSub.subscribe(AppEvents.LIST_ANIM_END, this.onAnimEnd.bind(this));
 	}
 
-	onInputChange() {
-		this.props.onUserInput(
-			this.refs.searchTextInput.value
-		);
+	componentWillMount() {
+		this.debounceInputChange = debounce(function() {
+			this.props.inputChangeCallback.apply(this, [this.state.query]);
+		}, 500);
+	}
+
+	onInputChange(event) {
+		this.setState({query: this.refs.searchQueryInput.value});
+		this.debounceInputChange();
 	}
 
 	onAnimStart(childElements) {
@@ -72,8 +79,8 @@ class SearchBar extends Component {
 							id="search"
 							type="search"
 							placeholder="Search by Name"
-							value={this.props.searchText}
-							ref="searchTextInput"
+							value={this.state.query}
+							ref="searchQueryInput"
 							onChange={this.onInputChange}
 						/>
 					</form>

@@ -8,13 +8,13 @@ class Home extends Component {
 	constructor(props) {
 		super(props);
 
-		this.onUserInput = this.onUserInput.bind(this);
+		this.inputChangeCallback = this.inputChangeCallback.bind(this);
 
 		this.api = '/assets/data/distilleries.json';
 
 		this.state = {
-			data       : null,
-			searchText : ''
+			data   : null,
+			result : ''
 		}
 
 		if ( !this.state.data ) {
@@ -22,10 +22,8 @@ class Home extends Component {
 		}
 	}
 
-	onUserInput(searchText) {
-		this.setState({
-			searchText: searchText
-		});
+	inputChangeCallback(query) {
+		this.setState({result: query});
 	}
 
 	loadData() {
@@ -74,9 +72,9 @@ class Home extends Component {
 		if ( this.state.data ) {
 			return (
 				<div>
-					<SearchBar data={this.state.data} searchText={this.state.searchText} onUserInput={this.onUserInput} />
+					<SearchBar data={this.state.data} query={this.state.result} inputChangeCallback={this.inputChangeCallback} />
 
-					<List data={this.state.data[region]} searchText={this.state.searchText}></List>
+					<List data={this.state.data[region]} query={this.state.result}></List>
 				</div>
 			);
 		}

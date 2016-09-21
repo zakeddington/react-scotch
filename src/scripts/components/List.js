@@ -9,11 +9,21 @@ class List extends Component {
 	constructor(props) {
 		super(props);
 
+		this.state = {
+			query: ''
+		}
+
 		this.elOverlay = document.createElement('div');
 		this.elOverlay.id = 'modal-overlay';
 		document.body.appendChild(this.elOverlay);
 
 		this.createModal = this.createModal.bind(this);
+	}
+
+	componentWillReceiveProps(nextProps) {
+		if (nextProps.query !== this.state.query) {
+			this.setState({query: nextProps.query});
+		}
 	}
 
 	createModal(event, data) {
@@ -41,17 +51,17 @@ class List extends Component {
 	render() {
 		var self = this;
 		var origData;
-		var searchText;
+		var query;
 		var curData = [];
 
 		if (this.props.data) {
-			origData = this.props.data;
-			searchText  = this.props.searchText.toLowerCase();
+			origData   = this.props.data;
+			query = this.state.query.toLowerCase();
 
-			if (searchText) {
+			if (query) {
 				origData.forEach(function(item) {
 					let name = item.name.toLowerCase();
-					if (name.indexOf(searchText) === -1) {
+					if (name.indexOf(query) === -1) {
 						return;
 					}
 					curData.push(item);
