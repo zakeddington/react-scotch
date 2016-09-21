@@ -16,7 +16,8 @@ footer {
 }
 
 footer {
-	border-top: 1px solid $white-rgba-25;
+	background: linear-gradient(to bottom, $white-rgba-10 0%, $black 100%);
+	border-top: 1px solid $white-rgba-15;
 	margin-top: 20px;
 	min-height: 100px;
 	padding-top: 40px;

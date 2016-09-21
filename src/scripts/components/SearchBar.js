@@ -78,7 +78,7 @@ class SearchBar extends Component {
 							autoComplete="off"
 							id="search"
 							type="search"
-							placeholder="Search by Name"
+							placeholder="Filter category by name"
 							value={this.state.query}
 							ref="searchQueryInput"
 							onChange={this.onInputChange}

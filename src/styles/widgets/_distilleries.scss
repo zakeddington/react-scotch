@@ -5,14 +5,15 @@
 
 nav {
 	@include clearfix();
+	background: linear-gradient(to top, $white-rgba-10 0%, $black 100%);
 	border-bottom: 1px solid $white-rgba-25;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 10px auto 20px;
+	padding-bottom: 20px;
 
 	ul {
 		display: block;
-		margin-bottom: 10px;
 		text-align: center;
 		width: 100%;
 
