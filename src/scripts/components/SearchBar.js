@@ -68,14 +68,14 @@ class SearchBar extends Component {
 
 			return (
 				<nav>
-
 					<ul>
 						{listItems}
 					</ul>
 
-					<form>
+					<fieldset>
 						<label htmlFor="search">Search Distilleries</label>
 						<input
+							autoComplete="off"
 							id="search"
 							type="search"
 							placeholder="Search by Name"
@@ -83,7 +83,7 @@ class SearchBar extends Component {
 							ref="searchQueryInput"
 							onChange={this.onInputChange}
 						/>
-					</form>
+					</fieldset>
 				</nav>
 			);
 		}
