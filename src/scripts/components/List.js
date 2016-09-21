@@ -82,7 +82,7 @@ class List extends Component {
 
 					return (
 						<li key={item.name}>
-							<a href="#test" className="item" onClick={(event) => self.createModal(event, item)} onKeyDown={(event) => self.createModal(event, item)}>
+							<a href="#" className="item" onClick={(event) => self.createModal(event, item)} onKeyDown={(event) => self.createModal(event, item)}>
 								<div className="image">
 									{image}
 								</div>
