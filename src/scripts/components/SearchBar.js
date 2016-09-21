@@ -11,13 +11,19 @@ class SearchBar extends Component {
 		this.state = {
 			query           : '',
 			isDisabledClass : '',
-			isDisabled      : () => {}
+			isDisabled      : () => {},
+			view            : 'grid-view'
 		}
 
 		this.onInputChange = this.onInputChange.bind(this);
+		this.onRadioChange = this.onRadioChange.bind(this);
 
 		PubSub.subscribe(AppEvents.LIST_ANIM_START, this.onAnimStart.bind(this));
 		PubSub.subscribe(AppEvents.LIST_ANIM_END, this.onAnimEnd.bind(this));
+	}
+
+	componentDidMount() {
+		PubSub.publish(AppEvents.LIST_LAYOUT_CHANGE, this.state.view);
 	}
 
 	componentWillMount() {
@@ -26,19 +32,28 @@ class SearchBar extends Component {
 		}, 500);
 	}
 
+	onRadioChange(event) {
+		var curView = event.currentTarget.value;
+
+		if (curView !== this.state.view) {
+			this.setState({view: curView});
+			PubSub.publish(AppEvents.LIST_LAYOUT_CHANGE, curView);
+		}
+	}
+
 	onInputChange(event) {
 		this.setState({query: this.refs.searchQueryInput.value});
 		this.debounceInputChange();
 	}
 
-	onAnimStart(childElements) {
+	onAnimStart(eventName, childElements) {
 		this.setState({
 			isDisabledClass : 'isDisabled',
 			isDisabled      : e => e.preventDefault()
 		});
 	}
 
-	onAnimEnd(childElements) {
+	onAnimEnd(eventName, childElements) {
 		this.setState({
 			isDisabledClass : '',
 			isDisabled      : () => {}
@@ -68,11 +83,11 @@ class SearchBar extends Component {
 
 			return (
 				<nav>
-					<ul>
+					<ul className="filter-category">
 						{listItems}
 					</ul>
 
-					<fieldset>
+					<fieldset className="filter-search">
 						<label htmlFor="search">Search Distilleries</label>
 						<input
 							autoComplete="off"
@@ -83,6 +98,41 @@ class SearchBar extends Component {
 							ref="searchQueryInput"
 							onChange={this.onInputChange}
 						/>
+					</fieldset>
+
+					<fieldset className="filter-view">
+						<ul>
+							<li>
+								<input
+									type="radio"
+									id="grid-view"
+									name="view-options"
+									value="grid-view"
+									ref="gridView"
+									checked={this.state.view === 'grid-view'}
+									onChange={this.onRadioChange}
+								/>
+								<label htmlFor="grid-view" className="label-grid">
+									<svg className="icon icon-grid"><use xlinkHref='#icon-grid' /></svg>
+									Grid View
+								</label>
+							</li>
+							<li>
+								<input
+									type="radio"
+									id="list-view"
+									name="view-options"
+									value="list-view"
+									ref="listView"
+									checked={this.state.view === 'list-view'}
+									onChange={this.onRadioChange}
+								/>
+								<label htmlFor="list-view" className="label-list">
+									<svg className="icon icon-list"><use xlinkHref='#icon-list' /></svg>
+									List View
+								</label>
+							</li>
+						</ul>
 					</fieldset>
 				</nav>
 			);

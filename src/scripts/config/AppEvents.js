@@ -16,7 +16,8 @@ const AppEvents = {
 	CUSTOM_EVENT        : 'onCustomEvent',
 	MODAL_EVENT         : 'onModalEvent',
 	LIST_ANIM_START     : 'onListAnimStart',
-	LIST_ANIM_END       : 'onListAnimEnd'
+	LIST_ANIM_END       : 'onListAnimEnd',
+	LIST_LAYOUT_CHANGE  : 'onListLayoutChange'
 
 };
 

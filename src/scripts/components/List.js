@@ -10,7 +10,8 @@ class List extends Component {
 		super(props);
 
 		this.state = {
-			query: ''
+			query       : '',
+			layoutClass : 'distilleries'
 		}
 
 		this.elOverlay = document.createElement('div');
@@ -18,6 +19,8 @@ class List extends Component {
 		document.body.appendChild(this.elOverlay);
 
 		this.createModal = this.createModal.bind(this);
+
+		PubSub.subscribe(AppEvents.LIST_LAYOUT_CHANGE, this.onLayoutChange.bind(this));
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -46,6 +49,11 @@ class List extends Component {
 		if (renderModal) {
 			ReactDOM.render(<Modal data={data} trigger={trigger} overlay={this.elOverlay} />, this.elOverlay);
 		}
+	}
+
+	onLayoutChange(eventName, layoutClass) {
+		var curClass = 'distilleries ' + layoutClass;
+		this.setState({layoutClass: curClass})
 	}
 
 	render() {
@@ -114,7 +122,7 @@ class List extends Component {
 					enterAnimation={'elevator'}
 					leaveAnimation={'elevator'}
 					typeName="ul"
-					className="distilleries"
+					className={this.state.layoutClass}
 					onStartAll={function(childElements) {
 						if (childElements.length) {
 							PubSub.publish(AppEvents.LIST_ANIM_START, childElements);

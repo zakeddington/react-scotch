@@ -12,9 +12,11 @@
 @import 'utils/classes';
 @import 'utils/reset';
 
+@import 'common/icons';
 @import 'common/typography';
 
 @import 'chrome/layout';
 
+@import 'widgets/nav';
 @import 'widgets/distilleries';
 @import 'widgets/modal-window';

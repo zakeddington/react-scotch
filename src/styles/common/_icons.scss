@@ -1,0 +1,16 @@
+
+// SVG icons
+// ---------------------------------------+
+//
+
+#svg-defs {
+	@include offscreen();
+}
+
+.icon {
+	display: inline-block;
+	fill: $white;
+	height: 1.5em;
+	vertical-align: middle;
+	width: 1.5em;
+}
