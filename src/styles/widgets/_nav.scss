@@ -167,7 +167,9 @@ nav {
 
 		.icon {
 			fill: $blue;
+			height: 1.5em;
 			margin-right: 5px;
+			width: 1.5em;
 		}
 	}
 
@@ -181,5 +183,9 @@ nav {
 		.icon {
 			fill: $white;
 		}
+	}
+
+	input:focus + label {
+		text-decoration: underline;
 	}
 }

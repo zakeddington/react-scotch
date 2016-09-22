@@ -82,22 +82,33 @@ class Modal extends Component {
 
 	render() {
 		let altText = this.props.data.name + ' logo';
+		let website = '';
 
 		document.body.classList.add('modal-open');
 		document.body.style.top = -this.state.scrollPos + 'px';
 		this.props.overlay.classList.add('isOpen');
 		document.getElementById('app').setAttribute('aria-hidden', true);
 
+		if (this.props.data.website) {
+			website =
+				<p><a href={this.props.data.website} className="website" target="_blank">
+					Visit site
+					<svg className="icon icon-external"><use xlinkHref='#icon-external' /></svg>
+				</a></p>;
+		}
+
 		return(
 			<div className={this.setOpenClass()}>
 				<button className="btn-modal-close" ref="btnModalClose" onClick={(event) => this.closeModal(event)}>
 					close modal window
+					<svg className="icon icon-close"><use xlinkHref='#icon-close' /></svg>
 				</button>
 				<div className="modal-content">
 					<div className="image">
 						<img src={this.props.data.image} alt={altText} />
 					</div>
 					<div className="details" dangerouslySetInnerHTML={{__html: this.props.data.details}} />
+					{website}
 				</div>
 			</div>
 		)

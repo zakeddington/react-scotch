@@ -81,6 +81,12 @@ body.modal-open {
 	p {
 		margin-bottom: 10px;
 	}
+
+	.website .icon {
+		fill: $blue;
+		margin-left: 5px;
+		opacity: 0.6;
+	}
 }
 
 // Close button
@@ -103,32 +109,18 @@ body.modal-open {
 	transition: all $anim-speed;
 	width: $_btn-close-size;
 
-	&:after,
-	&:before {
-		background: $white-rgba-60;
-		content: '';
-		display: block;
-		height: $_btn-close-size;
-		left: calc(50% - 1px);
+	.icon {
+		height: calc(#{$_btn-close-size} + 10px);
+		left: -5px;
+		opacity: 0.6;
 		position: absolute;
-		top: 0;
-		transition: all $anim-speed;
-		width: 2px;
+		top: -5px;
+		width: calc(#{$_btn-close-size} + 10px);
 	}
 
-	&:after {
-		transform: rotate(45deg);
+	&:hover {
+		.icon {
+			opacity: 1;
+		}
 	}
-
-	&:before {
-		transform: rotate(-45deg);
-	}
-
-
-
-	&:hover:after,
-	&:hover:before {
-		background: $white;
-	}
-
 }
