@@ -38,7 +38,7 @@
 			border: 1px dashed $white-rgba-25;
 			border-radius: 10px 0;
 			color: $white;
-			padding: 20px;
+			padding: 10px 20px 30px;
 			text-decoration: none;
 			transition: all $anim-speed ease-out;
 			width: 100%;
@@ -119,6 +119,28 @@
 			p {
 				opacity: 1;
 				transform: translateY(0);
+			}
+		}
+
+		.item:hover + .website {
+			opacity: 0.3;
+		}
+
+		.website {
+			bottom: 5px;
+			color: $white;
+			position: absolute;
+			right: 10px;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			.icon {
+				height: 1em;
+				margin-left: 5px;
+				opacity: 0.6;
+				width: 1em;
 			}
 		}
 	}

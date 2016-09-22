@@ -5,6 +5,7 @@
 		{
 			"name"    : "Glengyle",
 			"region"  : "Campbeltown",
+			"website" : "http://www.kilkerransinglemalt.com/",
 			"image"   : "assets/img/logos/campbeltown/glengyle.png",
 			"founded" : 2004,
 			"types"   : ["Single Malt"],
@@ -14,6 +15,7 @@
 		{
 			"name"    : "Glen Scotia",
 			"region"  : "Campbeltown",
+			"website" : "http://www.glenscotia.com/",
 			"image"   : "assets/img/logos/campbeltown/glen-scotia.png",
 			"founded" : 1832,
 			"types"   : ["Single Malt"],
@@ -23,6 +25,7 @@
 		{
 			"name"    : "Springbank",
 			"region"  : "Campbeltown",
+			"website" : "http://www.springbankwhisky.com/",
 			"image"   : "assets/img/logos/campbeltown/springbank.png",
 			"founded" : 1828,
 			"types"   : ["Blended Malt", "Single Malt"],
@@ -34,6 +37,7 @@
 		{
 			"name"    : "Arbikie",
 			"region"  : "Highland",
+			"website" : "http://www.arbikie.com/",
 			"image"   : "assets/img/logos/highland/arbikie.png",
 			"founded" : 2014,
 			"types"   : ["Single Malt"],
@@ -43,6 +47,7 @@
 		{
 			"name"    : "Aberfeldy",
 			"region"  : "Highland",
+			"website" : "http://www.aberfeldy.com/",
 			"image"   : "assets/img/logos/highland/aberfeldy.png",
 			"founded" : 1896,
 			"types"   : ["Single Malt"],
@@ -52,6 +57,7 @@
 		{
 			"name"    : "Ardmore",
 			"region"  : "Highland",
+			"website" : "http://www.ardmorewhisky.com/",
 			"image"   : "assets/img/logos/highland/ardmore.png",
 			"founded" : 1898,
 			"types"   : ["Single Malt"],
@@ -61,6 +67,7 @@
 		{
 			"name"    : "Ardnamurchan",
 			"region"  : "Highland",
+			"website" : "http://www.adelphidistillery.com/",
 			"image"   : "assets/img/logos/highland/ardnamurchan.png",
 			"founded" : 2014,
 			"types"   : ["Single Malt"],
@@ -70,6 +77,7 @@
 		{
 			"name"    : "Balblair",
 			"region"  : "Highland",
+			"website" : "http://www.balblair.com/",
 			"image"   : "assets/img/logos/highland/balblair.png",
 			"founded" : 1790,
 			"types"   : ["Single Malt"],
@@ -79,6 +87,7 @@
 		{
 			"name"    : "Ben Nevis",
 			"region"  : "Highland",
+			"website" : "http://www.bennevisdistillery.com/",
 			"image"   : "assets/img/logos/highland/ben-nevis.png",
 			"founded" : 1825,
 			"types"   : ["Blended Scotch", "Single Grain", "Single Malt"],
@@ -88,6 +97,7 @@
 		{
 			"name"    : "Blair Athol",
 			"region"  : "Highland",
+			"website" : "https://www.discovering-distilleries.com/blairathol/",
 			"image"   : "assets/img/logos/highland/blair-athol.png",
 			"founded" : 1798,
 			"types"   : ["Single Malt"],
@@ -97,6 +107,7 @@
 		{
 			"name"    : "Cameronbridge",
 			"region"  : "Highland",
+			"website" : "",
 			"image"   : "assets/img/logos/highland/cameronbridge.png",
 			"founded" : 1824,
 			"types"   : ["Single Grain"],
@@ -106,6 +117,7 @@
 		{
 			"name"    : "Clynelish",
 			"region"  : "Highland",
+			"website" : "https://www.discovering-distilleries.com/clynelish/",
 			"image"   : "assets/img/logos/highland/clynelish.png",
 			"founded" : 1819,
 			"types"   : ["Single Malt"],
@@ -115,6 +127,7 @@
 		{
 			"name"    : "Daftmill",
 			"region"  : "Highland",
+			"website" : "http://www.daftmill.com/",
 			"image"   : "assets/img/logos/highland/daftmill.png",
 			"founded" : 2005,
 			"types"   : ["Single Malt"],
@@ -124,6 +137,7 @@
 		{
 			"name"    : "Dalmore",
 			"region"  : "Highland",
+			"website" : "http://www.thedalmore.com/",
 			"image"   : "assets/img/logos/highland/dalmore.png",
 			"founded" : 1839,
 			"types"   : ["Single Malt"],
@@ -133,6 +147,7 @@
 		{
 			"name"    : "Dalwhinnie",
 			"region"  : "Highland",
+			"website" : "https://www.discovering-distilleries.com/dalwhinnie/",
 			"image"   : "assets/img/logos/highland/dalwhinnie.png",
 			"founded" : 1897,
 			"types"   : ["Single Malt"],
@@ -142,6 +157,7 @@
 		{
 			"name"    : "Deanston",
 			"region"  : "Highland",
+			"website" : "http://deanstonmalt.com/",
 			"image"   : "assets/img/logos/highland/deanston.png",
 			"founded" : 1966,
 			"types"   : ["Single Malt"],
@@ -151,6 +167,7 @@
 		{
 			"name"    : "Edradour",
 			"region"  : "Highland",
+			"website" : "http://www.edradour.com/",
 			"image"   : "assets/img/logos/highland/edradour.png",
 			"founded" : 1837,
 			"types"   : ["Single Malt"],
@@ -160,6 +177,7 @@
 		{
 			"name"    : "Fettercairn",
 			"region"  : "Highland",
+			"website" : "http://www.fettercairndistillery.co.uk/",
 			"image"   : "assets/img/logos/highland/fettercairn.png",
 			"founded" : 1824,
 			"types"   : ["Single Malt"],
@@ -169,6 +187,7 @@
 		{
 			"name"    : "Glencadam",
 			"region"  : "Highland",
+			"website" : "http://www.glencadamwhisky.com/",
 			"image"   : "assets/img/logos/highland/glencadam.png",
 			"founded" : 1825,
 			"types"   : ["Single Malt"],
@@ -178,6 +197,7 @@
 		{
 			"name"    : "Glendronach",
 			"region"  : "Speyside",
+			"website" : "http://glendronachdistillery.co.uk/",
 			"image"   : "assets/img/logos/highland/glendronach.png",
 			"founded" : 1826,
 			"types"   : ["Single Malt"],
@@ -187,6 +207,7 @@
 		{
 			"name"    : "Glen Garioch",
 			"region"  : "Highland",
+			"website" : "http://www.glengarioch.com/",
 			"image"   : "assets/img/logos/highland/glen-garioch.png",
 			"founded" : 1797,
 			"types"   : ["Single Malt"],
@@ -196,6 +217,7 @@
 		{
 			"name"    : "Glengoyne",
 			"region"  : "Highland",
+			"website" : "http://www.glengoyne.com/",
 			"image"   : "assets/img/logos/highland/glengoyne.png",
 			"founded" : 1833,
 			"types"   : ["Single Malt"],
@@ -205,6 +227,7 @@
 		{
 			"name"    : "Glenmorangie",
 			"region"  : "Highland",
+			"website" : "https://www.glenmorangie.com/",
 			"image"   : "assets/img/logos/highland/glenmorangie.png",
 			"founded" : 1843,
 			"types"   : ["Single Malt"],
@@ -214,6 +237,7 @@
 		{
 			"name"    : "Glen Ord",
 			"region"  : "Highland",
+			"website" : "https://www.discovering-distilleries.com/glenord/",
 			"image"   : "assets/img/logos/highland/glen-ord.png",
 			"founded" : 1838,
 			"types"   : ["Single Malt"],
@@ -223,6 +247,7 @@
 		{
 			"name"    : "Glenturret",
 			"region"  : "Highland",
+			"website" : "http://www.theglenturret.com/",
 			"image"   : "assets/img/logos/highland/glenturret.png",
 			"founded" : 1775,
 			"types"   : ["Single Malt"],
@@ -232,6 +257,7 @@
 		{
 			"name"    : "Invergordon",
 			"region"  : "Highland",
+			"website" : "",
 			"image"   : "assets/img/logos/highland/invergordon.png",
 			"founded" : 1961,
 			"types"   : ["Single Grain"],
@@ -241,6 +267,7 @@
 		{
 			"name"    : "Loch Lomond",
 			"region"  : "Highland",
+			"website" : "http://www.lochlomondgroup.com/",
 			"image"   : "assets/img/logos/highland/loch-lomond.png",
 			"founded" : 1966,
 			"types"   : ["Blended Scotch", "Single Grain", "Single Malt"],
@@ -250,6 +277,7 @@
 		{
 			"name"    : "MacDuff",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/highland/macduff.png",
 			"founded" : 1962,
 			"types"   : ["Single Malt"],
@@ -259,6 +287,7 @@
 		{
 			"name"    : "Oban",
 			"region"  : "Highland",
+			"website" : "https://www.discovering-distilleries.com/oban/",
 			"image"   : "assets/img/logos/highland/oban.png",
 			"founded" : 1794,
 			"types"   : ["Single Malt"],
@@ -268,6 +297,7 @@
 		{
 			"name"    : "Pulteney",
 			"region"  : "Highland",
+			"website" : "http://www.oldpulteney.com/",
 			"image"   : "assets/img/logos/highland/pulteney.png",
 			"founded" : 1826,
 			"types"   : ["Single Malt"],
@@ -277,6 +307,7 @@
 		{
 			"name"    : "Royal Brackla",
 			"region"  : "Highland",
+			"website" : "",
 			"image"   : "assets/img/logos/highland/royal-brackla.png",
 			"founded" : 1812,
 			"types"   : ["Single Malt"],
@@ -286,6 +317,7 @@
 		{
 			"name"    : "Royal Lochnagar",
 			"region"  : "Highland",
+			"website" : "https://www.discovering-distilleries.com/royallochnagar/",
 			"image"   : "assets/img/logos/highland/royal-lochnagar.png",
 			"founded" : 1845,
 			"types"   : ["Single Malt"],
@@ -295,6 +327,7 @@
 		{
 			"name"    : "Strathearn",
 			"region"  : "Highland",
+			"website" : "http://www.strathearndistillery.com/",
 			"image"   : "assets/img/logos/highland/strathearn.png",
 			"founded" : 2013,
 			"types"   : ["Single Malt"],
@@ -304,6 +337,7 @@
 		{
 			"name"    : "Teaninich",
 			"region"  : "Highland",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/teaninich/",
 			"image"   : "assets/img/logos/highland/teaninich.png",
 			"founded" : 1817,
 			"types"   : ["Single Malt"],
@@ -313,6 +347,7 @@
 		{
 			"name"    : "Tomatin",
 			"region"  : "Highland",
+			"website" : "http://www.tomatin.com/",
 			"image"   : "assets/img/logos/highland/tomatin.png",
 			"founded" : 1897,
 			"types"   : ["Single Malt"],
@@ -322,6 +357,7 @@
 		{
 			"name"    : "Tullibardine",
 			"region"  : "Highland",
+			"website" : "http://www.tullibardine.com/",
 			"image"   : "assets/img/logos/highland/tullibardine.png",
 			"founded" : 1949,
 			"types"   : ["Single Malt"],
@@ -331,6 +367,7 @@
 		{
 			"name"    : "Wolfburn",
 			"region"  : "Highland",
+			"website" : "http://wolfburn.com/",
 			"image"   : "assets/img/logos/highland/wolfburn.png",
 			"founded" : 2013,
 			"types"   : ["Single Malt"],
@@ -342,6 +379,7 @@
 		{
 			"name"    : "Abhainn Dearg",
 			"region"  : "Islands",
+			"website" : "http://www.abhainndearg.co.uk/",
 			"image"   : "assets/img/logos/islands/abhainn-dearg.png",
 			"founded" : 2009,
 			"types"   : ["Single Malt", "Unaged Spirits"],
@@ -351,6 +389,7 @@
 		{
 			"name"    : "Arran",
 			"region"  : "Islands",
+			"website" : "https://www.arranwhisky.com/",
 			"image"   : "assets/img/logos/islands/arran.png",
 			"founded" : 1993,
 			"types"   : ["Single Malt"],
@@ -360,6 +399,7 @@
 		{
 			"name"    : "Highland Park",
 			"region"  : "Islands",
+			"website" : "https://highlandpark.co.uk/",
 			"image"   : "assets/img/logos/islands/highland-park.png",
 			"founded" : 1798,
 			"types"   : ["Single Malt", "Unaged Spirits"],
@@ -369,6 +409,7 @@
 		{
 			"name"    : "Isle of Jura",
 			"region"  : "Islands",
+			"website" : "http://www.jurawhisky.com/",
 			"image"   : "assets/img/logos/islands/isle-of-jura.png",
 			"founded" : 1963,
 			"types"   : ["Single Malt"],
@@ -378,6 +419,7 @@
 		{
 			"name"    : "Scapa",
 			"region"  : "Islands",
+			"website" : "http://scapawhisky.com/",
 			"image"   : "assets/img/logos/islands/scapa.png",
 			"founded" : 1885,
 			"types"   : ["Single Malt"],
@@ -387,6 +429,7 @@
 		{
 			"name"    : "Talisker",
 			"region"  : "Islands",
+			"website" : "https://www.discovering-distilleries.com/talisker/",
 			"image"   : "assets/img/logos/islands/talisker.png",
 			"founded" : 1831,
 			"types"   : ["Single Malt"],
@@ -396,6 +439,7 @@
 		{
 			"name"    : "Tobermory",
 			"region"  : "Islands",
+			"website" : "http://tobermorydistillery.com/",
 			"image"   : "assets/img/logos/islands/tobermory.png",
 			"founded" : 1798,
 			"types"   : ["Single Malt"],
@@ -407,6 +451,7 @@
 		{
 			"name"    : "Ardbeg",
 			"region"  : "Islay",
+			"website" : "https://www.ardbeg.com/",
 			"image"   : "assets/img/logos/islay/ardbeg.png",
 			"founded" : 1815,
 			"types"   : ["Single Malt"],
@@ -416,6 +461,7 @@
 		{
 			"name"    : "Bowmore",
 			"region"  : "Islay",
+			"website" : "http://www.bowmore.com/",
 			"image"   : "assets/img/logos/islay/bowmore.png",
 			"founded" : 1779,
 			"types"   : ["Single Malt"],
@@ -425,6 +471,7 @@
 		{
 			"name"    : "Bruichladdich",
 			"region"  : "Islay",
+			"website" : "http://www.bruichladdich.com/",
 			"image"   : "assets/img/logos/islay/bruichladdich.png",
 			"founded" : 1881,
 			"types"   : ["Single Malt", "Unaged Spirits"],
@@ -434,6 +481,7 @@
 		{
 			"name"    : "Bunnahabhain",
 			"region"  : "Islay",
+			"website" : "http://bunnahabhain.com/",
 			"image"   : "assets/img/logos/islay/bunnahabhain.png",
 			"founded" : 1883,
 			"types"   : ["Single Malt"],
@@ -443,6 +491,7 @@
 		{
 			"name"    : "Caol Ila",
 			"region"  : "Islay",
+			"website" : "https://www.discovering-distilleries.com/caolila/",
 			"image"   : "assets/img/logos/islay/caol-ila.png",
 			"founded" : 1846,
 			"types"   : ["Single Malt"],
@@ -452,6 +501,7 @@
 		{
 			"name"    : "Kilchoman",
 			"region"  : "Islay",
+			"website" : "http://kilchomandistillery.com/",
 			"image"   : "assets/img/logos/islay/kilchoman.png",
 			"founded" : 2005,
 			"types"   : ["Single Malt", "Unaged Spirits"],
@@ -461,6 +511,7 @@
 		{
 			"name"    : "Lagavulin",
 			"region"  : "Islay",
+			"website" : "https://www.discovering-distilleries.com/lagavulin/",
 			"image"   : "assets/img/logos/islay/lagavulin.png",
 			"founded" : 1816,
 			"types"   : ["Single Malt"],
@@ -470,6 +521,7 @@
 		{
 			"name"    : "Laphroaig",
 			"region"  : "Islay",
+			"website" : "http://www.laphroaig.com/",
 			"image"   : "assets/img/logos/islay/laphroaig.png",
 			"founded" : 1815,
 			"types"   : ["Single Malt"],
@@ -481,6 +533,7 @@
 		{
 			"name"    : "Ailsa Bay",
 			"region"  : "Lowland",
+			"website" : "http://www.williamgrant.com/ailsabay_distillery.php",
 			"image"   : "assets/img/logos/lowland/ailsa-bay.png",
 			"founded" : 2007,
 			"types"   : ["Single Malt"],
@@ -490,6 +543,7 @@
 		{
 			"name"    : "Annandale",
 			"region"  : "Lowland",
+			"website" : "https://www.annandaledistillery.com/",
 			"image"   : "assets/img/logos/lowland/annandale.png",
 			"founded" : 2007,
 			"types"   : ["Single Malt"],
@@ -499,6 +553,7 @@
 		{
 			"name"    : "Auchentoshan",
 			"region"  : "Lowland",
+			"website" : "http://www.auchentoshan.com/",
 			"image"   : "assets/img/logos/lowland/auchentoshan.png",
 			"founded" : 1825,
 			"types"   : ["Single Malt"],
@@ -508,6 +563,7 @@
 		{
 			"name"    : "Bladnoch",
 			"region"  : "Lowland",
+			"website" : "http://bladnoch.com/",
 			"image"   : "assets/img/logos/lowland/bladnoch.png",
 			"founded" : 1825,
 			"types"   : ["Single Malt"],
@@ -517,6 +573,7 @@
 		{
 			"name"    : "Girvan",
 			"region"  : "Lowland",
+			"website" : "http://thegirvanpatentstill.com/",
 			"image"   : "assets/img/logos/lowland/girvan.png",
 			"founded" : 1963,
 			"types"   : ["Single Grain"],
@@ -526,6 +583,7 @@
 		{
 			"name"    : "Glenkinchie",
 			"region"  : "Lowland",
+			"website" : "https://www.discovering-distilleries.com/glenkinchie/",
 			"image"   : "assets/img/logos/lowland/glenkinchie.png",
 			"founded" : 1837,
 			"types"   : ["Single Malt"],
@@ -535,6 +593,7 @@
 		{
 			"name"    : "InchDairnie",
 			"region"  : "Lowland",
+			"website" : "http://www.inchdairniedistillery.com/",
 			"image"   : "assets/img/logos/lowland/inchdairnie.png",
 			"founded" : 2015,
 			"types"   : ["Single Malt"],
@@ -544,6 +603,7 @@
 		{
 			"name"    : "Kingsbarns",
 			"region"  : "Lowland",
+			"website" : "http://www.kingsbarnsdistillery.com/",
 			"image"   : "assets/img/logos/lowland/kingsbarns.png",
 			"founded" : 2014,
 			"types"   : ["Single Malt"],
@@ -553,6 +613,7 @@
 		{
 			"name"    : "North British",
 			"region"  : "Lowland",
+			"website" : "http://northbritish.co.uk/",
 			"image"   : "assets/img/logos/lowland/north-british.png",
 			"founded" : 1885,
 			"types"   : ["Single Grain"],
@@ -562,6 +623,7 @@
 		{
 			"name"    : "Starlaw",
 			"region"  : "Lowland",
+			"website" : "",
 			"image"   : "assets/img/logos/lowland/starlaw.png",
 			"founded" : 2010,
 			"types"   : ["Single Grain"],
@@ -571,6 +633,7 @@
 		{
 			"name"    : "Strathclyde",
 			"region"  : "Lowland",
+			"website" : "",
 			"image"   : "assets/img/logos/lowland/strathclyde.png",
 			"founded" : 1927,
 			"types"   : ["Blended Scotch", "Single Grain"],
@@ -582,6 +645,7 @@
 		{
 			"name"    : "Aberlour",
 			"region"  : "Speyside",
+			"website" : "http://www.aberlour.com/",
 			"image"   : "assets/img/logos/speyside/aberlour.png",
 			"founded" : 1826,
 			"types"   : ["Single Malt"],
@@ -591,6 +655,7 @@
 		{
 			"name"    : "Allt-A-Bhainne",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/allt-a-bhainne.png",
 			"founded" : 1975,
 			"types"   : ["Single Malt"],
@@ -600,6 +665,7 @@
 		{
 			"name"    : "Auchroisk",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/auchroisk/",
 			"image"   : "assets/img/logos/speyside/auchroisk.png",
 			"founded" : 1974,
 			"types"   : ["Single Malt"],
@@ -609,6 +675,7 @@
 		{
 			"name"    : "Aultmore",
 			"region"  : "Speyside",
+			"website" : "http://www.aultmore.com/",
 			"image"   : "assets/img/logos/speyside/aultmore.png",
 			"founded" : 1896,
 			"types"   : ["Single Malt"],
@@ -618,6 +685,7 @@
 		{
 			"name"    : "Ballindalloch",
 			"region"  : "Speyside",
+			"website" : "http://www.ballindallochdistillery.com/",
 			"image"   : "assets/img/logos/speyside/ballindalloch.png",
 			"founded" : 2014,
 			"types"   : ["Single Malt"],
@@ -627,6 +695,7 @@
 		{
 			"name"    : "Balmenach",
 			"region"  : "Speyside",
+			"website" : "http://www.caorunngin.com/",
 			"image"   : "assets/img/logos/speyside/balmenach.png",
 			"founded" : 1824,
 			"types"   : ["Single Malt"],
@@ -636,6 +705,7 @@
 		{
 			"name"    : "Balvenie",
 			"region"  : "Speyside",
+			"website" : "https://us.thebalvenie.com/",
 			"image"   : "assets/img/logos/speyside/balvenie.png",
 			"founded" : 1892,
 			"types"   : ["Single Malt"],
@@ -645,6 +715,7 @@
 		{
 			"name"    : "Benriach",
 			"region"  : "Speyside",
+			"website" : "http://www.benriachdistillery.co.uk/",
 			"image"   : "assets/img/logos/speyside/benriach.png",
 			"founded" : 1898,
 			"types"   : ["Single Malt"],
@@ -654,6 +725,7 @@
 		{
 			"name"    : "Benrinnes",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/benrinnes/",
 			"image"   : "assets/img/logos/speyside/benrinnes.png",
 			"founded" : 1835,
 			"types"   : ["Single Malt"],
@@ -663,6 +735,7 @@
 		{
 			"name"    : "Benromach",
 			"region"  : "Speyside",
+			"website" : "http://www.benromach.com/",
 			"image"   : "assets/img/logos/speyside/benromach.png",
 			"founded" : 1898,
 			"types"   : ["Single Malt"],
@@ -672,6 +745,7 @@
 		{
 			"name"    : "Braeval",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/braeval.png",
 			"founded" : 1974,
 			"types"   : ["Single Malt"],
@@ -681,6 +755,7 @@
 		{
 			"name"    : "Cardhu",
 			"region"  : "Speyside",
+			"website" : "https://www.discovering-distilleries.com/cardhu/",
 			"image"   : "assets/img/logos/speyside/cardhu.png",
 			"founded" : 1824,
 			"types"   : ["Blended Malt", "Single Malt"],
@@ -690,6 +765,7 @@
 		{
 			"name"    : "Cragganmore",
 			"region"  : "Speyside",
+			"website" : "https://www.discovering-distilleries.com/cragganmore/",
 			"image"   : "assets/img/logos/speyside/cragganmore.png",
 			"founded" : 1870,
 			"types"   : ["Single Malt"],
@@ -699,6 +775,7 @@
 		{
 			"name"    : "Craigellachie",
 			"region"  : "Speyside",
+			"website" : "http://www.craigellachie.com/",
 			"image"   : "assets/img/logos/speyside/craigellachie.png",
 			"founded" : 1891,
 			"types"   : ["Single Malt"],
@@ -708,6 +785,7 @@
 		{
 			"name"    : "Dailuaine",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/dailuaine/",
 			"image"   : "assets/img/logos/speyside/dailuaine.png",
 			"founded" : 1852,
 			"types"   : ["Single Malt"],
@@ -717,6 +795,7 @@
 		{
 			"name"    : "Dalmunach",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/dalmunach.png",
 			"founded" : 2015,
 			"types"   : ["Single Malt"],
@@ -726,6 +805,7 @@
 		{
 			"name"    : "Dufftown",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/the-singleton-of-dufftown/",
 			"image"   : "assets/img/logos/speyside/dufftown.png",
 			"founded" : 1896,
 			"types"   : ["Single Malt"],
@@ -735,6 +815,7 @@
 		{
 			"name"    : "Glenallachie",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/glenallachie.png",
 			"founded" : 1967,
 			"types"   : ["Single Malt"],
@@ -744,6 +825,7 @@
 		{
 			"name"    : "Glenburgie",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/glenburgie.png",
 			"founded" : 1829,
 			"types"   : ["Single Malt"],
@@ -753,6 +835,7 @@
 		{
 			"name"    : "Glendullan",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/glendullan.png",
 			"founded" : 1898,
 			"types"   : ["Single Malt"],
@@ -762,6 +845,7 @@
 		{
 			"name"    : "Glen Elgin",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/glen-elgin/",
 			"image"   : "assets/img/logos/speyside/glen-elgin.png",
 			"founded" : 1900,
 			"types"   : ["Single Malt"],
@@ -771,6 +855,7 @@
 		{
 			"name"    : "Glenfarclas",
 			"region"  : "Speyside",
+			"website" : "http://www.glenfarclas.co.uk/",
 			"image"   : "assets/img/logos/speyside/glenfarclas.png",
 			"founded" : 1836,
 			"types"   : ["Single Malt"],
@@ -780,6 +865,7 @@
 		{
 			"name"    : "Glenfiddich",
 			"region"  : "Speyside",
+			"website" : "http://www.glenfiddich.com/",
 			"image"   : "assets/img/logos/speyside/glenfiddich.png",
 			"founded" : 1887,
 			"types"   : ["Single Malt"],
@@ -789,6 +875,7 @@
 		{
 			"name"    : "Glenglassaugh",
 			"region"  : "Speyside",
+			"website" : "http://www.glenglassaugh.com/",
 			"image"   : "assets/img/logos/speyside/glenglassaugh.png",
 			"founded" : 1875,
 			"types"   : ["Single Malt"],
@@ -798,6 +885,7 @@
 		{
 			"name"    : "Glen Grant",
 			"region"  : "Speyside",
+			"website" : "http://www.glengrant.com/",
 			"image"   : "assets/img/logos/speyside/glen-grant.png",
 			"founded" : 1840,
 			"types"   : ["Single Malt"],
@@ -807,6 +895,7 @@
 		{
 			"name"    : "Glen Keith",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/glen-keith.png",
 			"founded" : 1959,
 			"types"   : ["Single Malt"],
@@ -816,6 +905,7 @@
 		{
 			"name"    : "Glenlivet",
 			"region"  : "Speyside",
+			"website" : "https://www.theglenlivet.com/",
 			"image"   : "assets/img/logos/speyside/glenlivet.png",
 			"founded" : 1824,
 			"types"   : ["Single Malt"],
@@ -825,6 +915,7 @@
 		{
 			"name"    : "Glenlossie",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/glenlossie/",
 			"image"   : "assets/img/logos/speyside/glenlossie.png",
 			"founded" : 1876,
 			"types"   : ["Single Malt"],
@@ -834,6 +925,7 @@
 		{
 			"name"    : "Glen Moray",
 			"region"  : "Speyside",
+			"website" : "http://www.glenmoray.com/",
 			"image"   : "assets/img/logos/speyside/glen-moray.png",
 			"founded" : 1897,
 			"types"   : ["Single Malt"],
@@ -843,6 +935,7 @@
 		{
 			"name"    : "Glenrothes",
 			"region"  : "Speyside",
+			"website" : "http://www.theglenrothes.com/",
 			"image"   : "assets/img/logos/speyside/glenrothes.png",
 			"founded" : 1878,
 			"types"   : ["Single Malt"],
@@ -852,6 +945,7 @@
 		{
 			"name"    : "Glen Spey",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/glen-spey/",
 			"image"   : "assets/img/logos/speyside/glen-spey.png",
 			"founded" : 1878,
 			"types"   : ["Single Malt"],
@@ -861,6 +955,7 @@
 		{
 			"name"    : "Glentauchers",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/glentauchers.png",
 			"founded" : 1898,
 			"types"   : ["Single Malt"],
@@ -870,6 +965,7 @@
 		{
 			"name"    : "Inchgower",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/inchgower/",
 			"image"   : "assets/img/logos/speyside/inchgower.png",
 			"founded" : 1871,
 			"types"   : ["Single Malt"],
@@ -879,6 +975,7 @@
 		{
 			"name"    : "Kininvie",
 			"region"  : "Speyside",
+			"website" : "http://www.williamgrant.com/kininvie_distillery.php",
 			"image"   : "assets/img/logos/speyside/kininvie.png",
 			"founded" : 1990,
 			"types"   : ["Single Malt"],
@@ -888,6 +985,7 @@
 		{
 			"name"    : "Knockando",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/knockando/",
 			"image"   : "assets/img/logos/speyside/knockando.png",
 			"founded" : 1898,
 			"types"   : ["Single Malt"],
@@ -897,6 +995,7 @@
 		{
 			"name"    : "Knockdhu",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/knockando/",
 			"image"   : "assets/img/logos/speyside/knockdhu.png",
 			"founded" : 1894,
 			"types"   : ["Single Malt"],
@@ -906,6 +1005,7 @@
 		{
 			"name"    : "Linkwood",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/linkwood/",
 			"image"   : "assets/img/logos/speyside/linkwood.png",
 			"founded" : 1821,
 			"types"   : ["Single Malt"],
@@ -915,6 +1015,7 @@
 		{
 			"name"    : "Longmorn",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/longmorn.png",
 			"founded" : 1894,
 			"types"   : ["Single Malt"],
@@ -924,6 +1025,7 @@
 		{
 			"name"    : "Macallan",
 			"region"  : "Speyside",
+			"website" : "http://www.themacallan.com/",
 			"image"   : "assets/img/logos/speyside/macallan.png",
 			"founded" : 1824,
 			"types"   : ["Single Malt"],
@@ -933,6 +1035,7 @@
 		{
 			"name"    : "Mannochmore",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/mannochmore/",
 			"image"   : "assets/img/logos/speyside/mannochmore.png",
 			"founded" : 1972,
 			"types"   : ["Single Malt"],
@@ -942,6 +1045,7 @@
 		{
 			"name"    : "Miltonduff",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/miltonduff.png",
 			"founded" : 1824,
 			"types"   : ["Single Malt"],
@@ -951,6 +1055,7 @@
 		{
 			"name"    : "Mortlach",
 			"region"  : "Speyside",
+			"website" : "http://www.mortlach.com/",
 			"image"   : "assets/img/logos/speyside/mortlach.png",
 			"founded" : 1823,
 			"types"   : ["Single Malt"],
@@ -960,6 +1065,7 @@
 		{
 			"name"    : "Roseisle",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/roseisle.png",
 			"founded" : 2008,
 			"types"   : ["Single Malt"],
@@ -969,6 +1075,7 @@
 		{
 			"name"    : "Speyburn",
 			"region"  : "Speyside",
+			"website" : "http://www.speyburn.com/",
 			"image"   : "assets/img/logos/speyside/speyburn.png",
 			"founded" : 1897,
 			"types"   : ["Single Malt"],
@@ -978,6 +1085,7 @@
 		{
 			"name"    : "Speyside",
 			"region"  : "Speyside",
+			"website" : "http://speysidedistillery.co.uk/",
 			"image"   : "assets/img/logos/speyside/speyside.png",
 			"founded" : 1990,
 			"types"   : ["Single Malt"],
@@ -987,6 +1095,7 @@
 		{
 			"name"    : "Strathisla",
 			"region"  : "Speyside",
+			"website" : "http://www.maltwhiskydistilleries.com/Distilleries/Welcome/Strathisla/tabid/65/Default.aspx",
 			"image"   : "assets/img/logos/speyside/strathisla.png",
 			"founded" : 1786,
 			"types"   : ["Single Malt"],
@@ -996,6 +1105,7 @@
 		{
 			"name"    : "Strathmill",
 			"region"  : "Speyside",
+			"website" : "https://www.malts.com/en-us/our-whisky-collection/strathmill/",
 			"image"   : "assets/img/logos/speyside/strathmill.png",
 			"founded" : 1891,
 			"types"   : ["Single Malt"],
@@ -1005,6 +1115,7 @@
 		{
 			"name"    : "Tamdhu",
 			"region"  : "Speyside",
+			"website" : "http://www.tamdhu.com/",
 			"image"   : "assets/img/logos/speyside/tamdhu.png",
 			"founded" : 1896,
 			"types"   : ["Single Malt"],
@@ -1014,6 +1125,7 @@
 		{
 			"name"    : "Tamnavulin",
 			"region"  : "Speyside",
+			"website" : "",
 			"image"   : "assets/img/logos/speyside/tamnavulin.png",
 			"founded" : 1966,
 			"types"   : ["Single Malt"],
@@ -1023,6 +1135,7 @@
 		{
 			"name"    : "Tomintoul",
 			"region"  : "Speyside",
+			"website" : "http://www.tomintoulwhisky.com/",
 			"image"   : "assets/img/logos/speyside/tomintoul.png",
 			"founded" : 1965,
 			"types"   : ["Single Malt"],
@@ -1032,6 +1145,7 @@
 		{
 			"name"    : "Tormore",
 			"region"  : "Speyside",
+			"website" : "http://www.tormoredistillery.com/",
 			"image"   : "assets/img/logos/speyside/tormore.png",
 			"founded" : 1960,
 			"types"   : ["Single Malt"],

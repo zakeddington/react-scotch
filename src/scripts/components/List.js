@@ -83,9 +83,18 @@ class List extends Component {
 				listItems = curData.map(function(item) {
 					let altText = item.name + ' logo';
 					let image   = '';
+					let website = '';
 
 					if (item.image) {
 						image   = <img src={item.image} alt={altText} />;
+					}
+
+					if (item.website) {
+						website =
+							<a href={item.website} className="website" target="_blank">
+								Visit site
+								<svg className="icon icon-external"><use xlinkHref='#icon-external' /></svg>
+							</a>;
 					}
 
 					return (
@@ -108,6 +117,7 @@ class List extends Component {
 								</ul>
 								<div className="intro" dangerouslySetInnerHTML={{__html: item.intro}} />
 							</a>
+							{website}
 						</li>
 					);
 				});
