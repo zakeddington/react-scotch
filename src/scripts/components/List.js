@@ -126,24 +126,26 @@ class List extends Component {
 			}
 
 			return (
-				<FlipMove
-					staggerDurationBy="20"
-					duration={200}
-					enterAnimation={'elevator'}
-					leaveAnimation={'elevator'}
-					typeName="ul"
-					className={this.state.layoutClass}
-					onStartAll={function(childElements) {
-						if (childElements.length) {
-							PubSub.publish(AppEvents.LIST_ANIM_START, childElements);
-						}
-					}}
-					onFinishAll={function(childElements) {
-						PubSub.publish(AppEvents.LIST_ANIM_END, childElements);
-					}}
-				>
-					{listItems}
-				</FlipMove>
+				<div className="container">
+					<FlipMove
+						staggerDurationBy="20"
+						duration={200}
+						enterAnimation={'elevator'}
+						leaveAnimation={'elevator'}
+						typeName="ul"
+						className={this.state.layoutClass}
+						onStartAll={function(childElements) {
+							if (childElements.length) {
+								PubSub.publish(AppEvents.LIST_ANIM_START, childElements);
+							}
+						}}
+						onFinishAll={function(childElements) {
+							PubSub.publish(AppEvents.LIST_ANIM_END, childElements);
+						}}
+					>
+						{listItems}
+					</FlipMove>
+				</div>
 			);
 		}
 

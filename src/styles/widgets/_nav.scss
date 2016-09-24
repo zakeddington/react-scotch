@@ -7,10 +7,13 @@ nav {
 	@include clearfix();
 	background: linear-gradient(to top, $white-rgba-10 0%, $black 100%);
 	border-bottom: 1px solid $white-rgba-25;
-	display: flex;
-	flex-wrap: wrap;
-	margin: 10px auto 20px;
+	margin: 20px auto;
 	padding-bottom: 20px;
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 
@@ -30,6 +33,11 @@ nav {
 	li {
 		display: inline-block;
 		margin: 0 10px 10px;
+
+		@include breakpoint(mobile) {
+			font-size: 16px;
+			margin: 0 5px 5px;
+		}
 	}
 
 	.count {

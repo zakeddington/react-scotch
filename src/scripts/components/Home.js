@@ -71,11 +71,11 @@ class Home extends Component {
 
 		if ( this.state.data ) {
 			return (
-				<div>
+				<main>
 					<SearchBar data={this.state.data} query={this.state.result} inputChangeCallback={this.inputChangeCallback} />
 
 					<List data={this.state.data[region]} query={this.state.result}></List>
-				</div>
+				</main>
 			);
 		}
 

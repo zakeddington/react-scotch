@@ -83,57 +83,59 @@ class SearchBar extends Component {
 
 			return (
 				<nav>
-					<ul className="filter-category">
-						{listItems}
-					</ul>
-
-					<fieldset className="filter-search">
-						<label htmlFor="search">Search Distilleries</label>
-						<input
-							autoComplete="off"
-							id="search"
-							type="search"
-							placeholder="Filter category by name"
-							value={this.state.query}
-							ref="searchQueryInput"
-							onChange={this.onInputChange}
-						/>
-					</fieldset>
-
-					<fieldset className="filter-view">
-						<ul>
-							<li>
-								<input
-									type="radio"
-									id="grid-view"
-									name="view-options"
-									value="grid-view"
-									ref="gridView"
-									checked={this.state.view === 'grid-view'}
-									onChange={this.onRadioChange}
-								/>
-								<label htmlFor="grid-view" className="label-grid">
-									<svg className="icon icon-grid"><use xlinkHref='#icon-grid' /></svg>
-									Grid View
-								</label>
-							</li>
-							<li>
-								<input
-									type="radio"
-									id="list-view"
-									name="view-options"
-									value="list-view"
-									ref="listView"
-									checked={this.state.view === 'list-view'}
-									onChange={this.onRadioChange}
-								/>
-								<label htmlFor="list-view" className="label-list">
-									<svg className="icon icon-list"><use xlinkHref='#icon-list' /></svg>
-									List View
-								</label>
-							</li>
+					<div className="container">
+						<ul className="filter-category">
+							{listItems}
 						</ul>
-					</fieldset>
+
+						<fieldset className="filter-search">
+							<label htmlFor="search">Search Distilleries</label>
+							<input
+								autoComplete="off"
+								id="search"
+								type="search"
+								placeholder="Filter category by name"
+								value={this.state.query}
+								ref="searchQueryInput"
+								onChange={this.onInputChange}
+							/>
+						</fieldset>
+
+						<fieldset className="filter-view">
+							<ul>
+								<li>
+									<input
+										type="radio"
+										id="grid-view"
+										name="view-options"
+										value="grid-view"
+										ref="gridView"
+										checked={this.state.view === 'grid-view'}
+										onChange={this.onRadioChange}
+									/>
+									<label htmlFor="grid-view" className="label-grid">
+										<svg className="icon icon-grid"><use xlinkHref='#icon-grid' /></svg>
+										Grid View
+									</label>
+								</li>
+								<li>
+									<input
+										type="radio"
+										id="list-view"
+										name="view-options"
+										value="list-view"
+										ref="listView"
+										checked={this.state.view === 'list-view'}
+										onChange={this.onRadioChange}
+									/>
+									<label htmlFor="list-view" className="label-list">
+										<svg className="icon icon-list"><use xlinkHref='#icon-list' /></svg>
+										List View
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
 				</nav>
 			);
 		}
