@@ -1,7 +1,8 @@
 const npmConfig = require('../npm.config.js');
 const copyfiles = require('copyfiles');
 
-const env = process.argv[2];
+const env           = process.argv[2];
+const newerFilePath = process.argv[3];
 
 function copyTask() {
 
@@ -14,9 +15,21 @@ function copyTask() {
 	let srcHtml   = npmConfig.source.html + '**/*';
 	let envHtml   = npmConfig[env].root;
 
-	copyfiles([srcImages, envImages], 3, function() {});
-	copyfiles([srcData,   envData],   1, function() {});
-	copyfiles([srcHtml,   envHtml],   2, function() {});
+	if (newerFilePath) {
+
+		if (newerFilePath.includes(npmConfig.source.images)) {
+			copyfiles([newerFilePath, envImages], 3, function() {});
+		} else if (newerFilePath.includes(npmConfig.source.data)) {
+			copyfiles([newerFilePath, envData], 1, function() {});
+		} else if (newerFilePath.includes(npmConfig.source.html)) {
+			copyfiles([newerFilePath, envHtml], 2, function() {});
+		}
+
+	} else {
+		copyfiles([srcImages, envImages], 3, function() {});
+		copyfiles([srcData,   envData],   1, function() {});
+		copyfiles([srcHtml,   envHtml],   2, function() {});
+	}
 };
 
 copyTask();
