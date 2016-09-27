@@ -8,8 +8,8 @@ const chalk      = require('chalk');
 const env = process.argv[2];
 
 function browserifyTask() {
-	let srcPath = npmConfig.source.scripts + 'initialize.js';
-	let envPath = npmConfig[env].scripts   + 'initialize.js';
+	let srcPath = npmConfig.source.scripts + npmConfig.assetName + '.js';
+	let envPath = npmConfig[env].scripts   + npmConfig.assetName + '.js';
 
 	let paths = [
 		pathmodify.mod.dir('config',    path.join(__dirname, '../src/scripts/config')),
