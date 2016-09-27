@@ -9,7 +9,7 @@
 	}
 }
 
-.loader-overlay {
+.loading-overlay {
 	background: $black-rgba-60;
 	height: 100%;
 	left: 0;
@@ -20,7 +20,8 @@
 	z-index: 1;
 }
 
-.loader-spinner {
+.loading {
+	@include hide-text();
 	animation: loading-anim 0.7s steps(8) infinite;
 	background: url($image-path+'/loading.png') center center no-repeat;
 	height: 60px;

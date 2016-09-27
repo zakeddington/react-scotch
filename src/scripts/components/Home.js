@@ -79,7 +79,7 @@ class Home extends Component {
 			);
 		}
 
-		return <div>Loading Home...</div>;
+		return <div className="loading-overlay"><div className="loading">Loading...</div></div>;
 	}
 
 }

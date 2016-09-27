@@ -93,7 +93,7 @@ class Modal extends Component {
 			website =
 				<p><a href={this.props.data.website} className="website" target="_blank">
 					Visit site
-					<svg className="icon icon-external"><use xlinkHref='#icon-external' /></svg>
+					<svg aria-hidden="true" className="icon icon-external"><use xlinkHref='assets/img/icons.svg#icon-external' /></svg>
 				</a></p>;
 		}
 
@@ -101,7 +101,7 @@ class Modal extends Component {
 			<div className={this.setOpenClass()}>
 				<button className="btn-modal-close" ref="btnModalClose" onClick={(event) => this.closeModal(event)}>
 					close modal window
-					<svg className="icon icon-close"><use xlinkHref='#icon-close' /></svg>
+					<svg aria-hidden="true" className="icon icon-close"><use xlinkHref='assets/img/icons.svg#icon-close' /></svg>
 				</button>
 				<div className="modal-content">
 					<div className="image">

@@ -114,7 +114,7 @@ class SearchBar extends Component {
 										onChange={this.onRadioChange}
 									/>
 									<label htmlFor="grid-view" className="label-grid">
-										<svg className="icon icon-grid"><use xlinkHref='#icon-grid' /></svg>
+										<svg aria-hidden="true" className="icon icon-grid"><use xlinkHref='assets/img/icons.svg#icon-grid' /></svg>
 										Grid View
 									</label>
 								</li>
@@ -129,7 +129,7 @@ class SearchBar extends Component {
 										onChange={this.onRadioChange}
 									/>
 									<label htmlFor="list-view" className="label-list">
-										<svg className="icon icon-list"><use xlinkHref='#icon-list' /></svg>
+										<svg aria-hidden="true" className="icon icon-list"><use xlinkHref='assets/img/icons.svg#icon-list' /></svg>
 										List View
 									</label>
 								</li>
@@ -140,7 +140,7 @@ class SearchBar extends Component {
 			);
 		}
 
-		return <div>Loading...</div>;
+		return <div className="loading-overlay"><div className="loading">Loading...</div></div>;
 	}
 }
 

@@ -93,7 +93,7 @@ class List extends Component {
 						website =
 							<a href={item.website} className="website" target="_blank">
 								Visit site
-								<svg className="icon icon-external"><use xlinkHref='#icon-external' /></svg>
+								<svg aria-hidden="true" className="icon icon-external"><use xlinkHref='assets/img/icons.svg#icon-external' /></svg>
 							</a>;
 					}
 
@@ -149,7 +149,7 @@ class List extends Component {
 			);
 		}
 
-		return <div>Loading...</div>;
+		return <div className="loading-overlay"><div className="loading">Loading...</div></div>;
 	}
 }
 
