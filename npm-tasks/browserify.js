@@ -13,15 +13,11 @@ function browserifyTask() {
 
 	let paths = [
 		pathmodify.mod.dir('config',    path.join(__dirname, '../src/scripts/config')),
-		pathmodify.mod.dir('modules',   path.join(__dirname, '../src/scripts/modules')),
-		pathmodify.mod.dir('utilities', path.join(__dirname, '../src/scripts/utilities')),
-		pathmodify.mod.dir('views',     path.join(__dirname, '../src/scripts/views')),
-		pathmodify.mod.dir('widgets',   path.join(__dirname, '../src/scripts/widgets')),
-		pathmodify.mod.dir('templates', path.join(__dirname, '../src/templates'))
+		pathmodify.mod.dir('components',path.join(__dirname, '../src/scripts/components')),
+		pathmodify.mod.dir('utilities', path.join(__dirname, '../src/scripts/utilities'))
 	];
 
 	browserify(srcPath)
-		.transform('browserify-handlebars')
 		.transform('babelify', {
 			presets: ['es2015', 'react']
 		})
