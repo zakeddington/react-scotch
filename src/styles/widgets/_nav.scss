@@ -99,7 +99,7 @@ nav {
 	}
 
 	input {
-		background: $blue-rgba-75;
+		background: $yellow-rgba-85;
 		border: none;
 		border-radius: 3px;
 		color: $black;
@@ -116,7 +116,7 @@ nav {
 		}
 
 		&:focus {
-			background: $blue;
+			background: $yellow;
 			outline: none;
 			width: 80%;
 		}

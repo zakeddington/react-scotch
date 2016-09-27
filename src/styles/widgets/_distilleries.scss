@@ -37,7 +37,7 @@
 			background: linear-gradient(to left top, $white-rgba-15 0%, $black 100%);
 			border: 1px dashed $white-rgba-25;
 			border-radius: 10px 0;
-			color: $white;
+			color: $yellow;
 			padding: 10px 20px 30px;
 			text-decoration: none;
 			transition: all $anim-speed ease-out;
@@ -72,6 +72,7 @@
 
 		li {
 			align-items: center;
+			color: $white;
 
 			em {
 				opacity: 0.6;
@@ -90,6 +91,7 @@
 			align-items: center;
 			background: $black-rgba-85;
 			border-radius: 10px 0;
+			color: $white;
 			display: flex;
 			height: calc(100% - 2px);
 			left: 1px;
@@ -177,7 +179,6 @@
 		background: none;
 		border: none;
 		border-radius: 0;
-		color: $blue;
 		padding: 0;
 	}
 
