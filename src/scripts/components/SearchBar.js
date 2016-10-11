@@ -102,6 +102,7 @@ class SearchBar extends Component {
 						</fieldset>
 
 						<fieldset className="filter-view">
+							<legend>Layout options</legend>
 							<ul>
 								<li>
 									<input

@@ -153,6 +153,10 @@ nav {
 		text-align: center;
 	}
 
+	legend {
+		@include offscreen();
+	}
+
 	li {
 		display: inline-block;
 		margin-right: 20px;
