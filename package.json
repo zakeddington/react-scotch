@@ -25,7 +25,7 @@
 		"eslint-loader"                    : "^1.4.1",
 		"eslint-plugin-react"              : "^5.2.2",
 		"file-rw"                          : "^0.1.0",
-		"node-sass"                        : "^3.8.0",
+		"node-sass"                        : "^4.14.1",
 		"npm-run-all"                      : "^2.1.1",
 		"pathmodify"                       : "^0.5.0",
 		"postcss"                          : "^5.1.0",
